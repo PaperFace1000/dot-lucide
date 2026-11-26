@@ -114,6 +114,10 @@ node tools/extract-icons.mjs /path/to/node_modules/lucide-react icons.json
 
 アイコンごとに手で描いた形へ差し替える仕組みは、まだありません。
 
+## プルリクエストと Issue
+
+このリポジトリは個人で使うために公開しています。プルリクエストと Issue は受け付けていません。
+
 ## ファイル構成
 
 | ファイル | 内容 |
