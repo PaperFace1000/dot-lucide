@@ -25,3 +25,16 @@ SOFTWARE.
 This license covers the conversion script and the sample page (index.html and
 tools/). It does not cover the icon shapes: icons.json and the files in icons/
 are derived from Lucide and remain under the licenses in LICENSE-lucide.txt.
+
+Copyright in the Lucide icons and in the converted icons belongs to the
+authors of the original icons (Lucide Icons and Contributors; Cole Bemis for
+the icons derived from Feather).
+
+The converted icons are subject to the latest license published by Lucide
+(https://lucide.dev/license). If LICENSE-lucide.txt in this repository differs
+from it, the license published by Lucide prevails.
+
+The converted icons are provided "AS IS", without warranty of any kind. In no
+event shall the author of this repository be liable for any claim, damages or
+other liability arising from, out of or in connection with the converted icons
+or their use.

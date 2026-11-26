@@ -146,3 +146,15 @@ node tools/extract-icons.mjs /path/to/node_modules/lucide-react icons.json
 - 変換したアイコン（`icons/`）と元のデータ（`icons.json`）は、元になった Lucide のアイコンのライセンスに従います。どのアイコンがどちらのライセンスかは、`icons/manifest.json` と、各 SVG の先頭のコメントに書いてあります
 - 全文は、アイコンの分が `LICENSE-lucide.txt`、スクリプトとページの分が `LICENSE` にあります
 - `icons/` のファイルや `icons.json` を配るときは、`LICENSE-lucide.txt` を一緒に配ってください。ISC License も MIT License も、著作権表示と許諾の文面を複製に含めることが条件です
+
+### 著作権
+
+Lucide のアイコンも、このリポジトリで変換したアイコンも、著作権は元のアイコンの作者（Lucide Icons and Contributors、Feather 由来のアイコンは Cole Bemis）に帰属します。
+
+### 適用されるライセンスの版
+
+変換したアイコンに適用されるライセンスは、[Lucide が公開している最新のライセンス](https://lucide.dev/license)です。このリポジトリにある写し（`LICENSE-lucide.txt`）と内容が食い違うときは、Lucide の公式の記載が優先されます。
+
+### 免責
+
+変換したアイコン・変換のスクリプト・サンプルページは、現状のまま、いかなる保証もなく提供されます。これらを使ったこと、または使えなかったことによって生じたいかなる損害についても、このリポジトリの作者は責任を負いません。
