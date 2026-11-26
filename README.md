@@ -147,9 +147,11 @@ node tools/extract-icons.mjs /path/to/node_modules/lucide-react icons.json
 
 Lucide のアイコンも、このリポジトリで変換したアイコンも、著作権は元のアイコンの作者（Lucide Icons and Contributors、Feather 由来のアイコンは Cole Bemis）に帰属します。
 
-### 適用されるライセンスの版
+### ライセンスと規約の優先
 
-変換したアイコンに適用されるライセンスは、[Lucide が公開している最新のライセンス](https://lucide.dev/license)です。このリポジトリにある写し（`LICENSE-lucide.txt`）と内容が食い違うときは、Lucide の公式の記載が優先されます。
+変換したアイコンに適用されるライセンスは、[Lucide が公開している最新のライセンス](https://lucide.dev/license)です。Lucide が利用規約やガイドラインなどの決まりを定めている場合は、それらも変換したアイコンに適用されます。
+
+このリポジトリにある写し（`LICENSE-lucide.txt`）や説明と内容が食い違うときは、Lucide の公式の記載が優先されます。
 
 ### 免責
 
