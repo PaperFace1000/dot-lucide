@@ -1,0 +1,1966 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Lucide Dot Matrix</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@500..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* レイアウト: 左に大きな表示パネル、右に調整つまみ。その下にアイコン一覧 → 実寸の比較 → 画面に置いた例、の順に縦へ流す */
+  :root {
+    --bg: #efefec;
+    --panel: #ffffff;
+    --ink: #0c0c0d;
+    --mute: #6c6d70;
+    --line: #d3d3cf;
+    --off: #dcdcd8;
+    --accent: #d0202a;
+    --font-dot: "Doto", "IBM Plex Mono", ui-monospace, monospace;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --font-body: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000; --panel: #0f0f11; --ink: #f2f2ef; --mute: #8b8c90;
+      --line: #2a2a2e; --off: #232327; --accent: #ea3741; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000; --panel: #0f0f11; --ink: #f2f2ef; --mute: #8b8c90;
+    --line: #2a2a2e; --off: #232327; --accent: #ea3741; color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: var(--font-body); font-size: 14px; line-height: 1.7;
+  }
+  .wrap {
+    max-width: 1040px; margin-inline: auto; padding-block: 40px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: flex; flex-direction: column; gap: 56px;
+  }
+  svg { display: block; }
+  .dot-off { fill: var(--off); }
+
+  .label {
+    font-family: var(--font-mono); font-size: 11px; font-weight: 500;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--mute);
+  }
+  .label b { color: var(--accent); font-weight: 500; }
+
+  header { display: flex; flex-direction: column; gap: 12px; }
+  h1 {
+    margin: 0; font-family: var(--font-dot); font-weight: 900;
+    font-size: clamp(34px, 7vw, 64px); line-height: 1; letter-spacing: 0.02em;
+  }
+  h1 span { color: var(--accent); }
+  header p { margin: 0; max-width: 40em; color: var(--mute); }
+
+  section { display: flex; flex-direction: column; gap: 16px; }
+  h2 { margin: 0; font-size: 18px; font-weight: 600; text-wrap: balance; }
+  .lead { margin: 0; max-width: 44em; color: var(--mute); }
+
+  /* 表示パネルと調整つまみ */
+  .stage { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+  @media (max-width: 760px) { .stage { grid-template-columns: minmax(0, 1fr); } }
+  .display {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 28px;
+    padding: 24px; display: flex; flex-direction: column; gap: 20px;
+  }
+  .display-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .rec { display: inline-flex; align-items: center; gap: 8px; }
+  .rec::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .display-main { display: flex; align-items: flex-end; gap: 20px; }
+  .display-main .big { flex: 1 1 auto; min-width: 0; max-width: 340px; }
+  .display-main .big svg { width: 100%; height: auto; }
+  .display-main .orig { flex: 0 0 auto; display: flex; flex-direction: column; gap: 6px; align-items: center; color: var(--mute); }
+  .display-name { font-family: var(--font-dot); font-weight: 800; font-size: 26px; line-height: 1.1; overflow-wrap: anywhere; }
+  .display-meta { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+
+  .controls { display: flex; flex-direction: column; gap: 20px; }
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  .field-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .field-head output { font-family: var(--font-mono); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .seg { display: flex; flex-wrap: wrap; gap: 6px; }
+  .seg label { position: relative; }
+  .seg input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+  .seg span {
+    display: block; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px;
+    font-size: 13px; background: transparent;
+  }
+  .seg input:checked + span { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .seg input:focus-visible + span, button:focus-visible, input[type="range"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  input[type="range"] { width: 100%; accent-color: var(--ink); margin: 0; }
+  .check { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; }
+  .check input { accent-color: var(--ink); width: 16px; height: 16px; margin: 0; }
+  .pill-btn {
+    display: inline-flex; align-items: center; gap: 8px; align-self: flex-start;
+    font: inherit; font-size: 13px; color: var(--ink); background: transparent;
+    border: 1px solid var(--ink); border-radius: 999px; padding: 7px 16px; cursor: pointer;
+  }
+  .pill-btn.solid { background: var(--ink); color: var(--bg); }
+  .pill-btn.danger { border-color: var(--accent); color: var(--accent); }
+  .code {
+    margin: 0; padding: 10px 12px; max-height: 76px; overflow: auto; border: 1px solid var(--line); border-radius: 12px;
+    font-family: var(--font-mono); font-size: 11px; line-height: 1.5; color: var(--mute);
+    white-space: pre-wrap; overflow-wrap: anywhere; user-select: all;
+  }
+
+  /* 一覧 */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 8px; }
+  .cell {
+    font: inherit; color: var(--ink); background: transparent; cursor: pointer;
+    border: 1px solid transparent; border-radius: 16px; padding: 14px 6px 10px;
+    display: flex; flex-direction: column; align-items: center; gap: 10px; min-width: 0;
+  }
+  .cell:hover { border-color: var(--line); }
+  .cell[aria-pressed="true"] { border-color: var(--ink); background: var(--panel); }
+  .cell small { font-family: var(--font-mono); font-size: 10px; color: var(--mute); max-width: 100%; overflow-wrap: anywhere; text-align: center; line-height: 1.3; }
+
+  .grid-scroll { max-height: 560px; overflow-y: auto; border-block: 1px solid var(--line); padding-block: 8px; }
+  .cell > span { width: 56px; height: 56px; }
+  .search {
+    font: inherit; font-size: 14px; color: var(--ink); background: var(--panel); width: 100%; max-width: 420px;
+    border: 1px solid var(--line); border-radius: 999px; padding: 9px 18px;
+  }
+  .search:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .cell small.license { font-size: 9px; letter-spacing: 0.08em; border: 1px solid var(--line); border-radius: 999px; padding: 0 6px; }
+  .license-table th, .license-table td { text-align: left; padding: 10px 18px 10px 0; vertical-align: top; }
+  .license-table td { font-size: 13px; }
+  a { color: inherit; }
+
+  /* 実寸の比較 */
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; }
+  th, td { padding: 12px 18px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; }
+  th { font-family: var(--font-mono); font-size: 11px; font-weight: 500; color: var(--mute); letter-spacing: 0.08em; white-space: nowrap; }
+  tbody th { text-align: left; padding-left: 0; }
+  td svg { margin-inline: auto; }
+
+  /* 画面に置いた例 */
+  .mock { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 24px; padding: 20px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+  .time { font-family: var(--font-dot); font-weight: 900; font-size: clamp(40px, 9vw, 54px); line-height: 1; font-variant-numeric: tabular-nums; }
+  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .list li { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); min-width: 0; }
+  .list li:first-child { border-top: 0; }
+  .list li span { min-width: 0; }
+  .list .warn { color: var(--accent); }
+  .nav { display: flex; justify-content: space-between; gap: 4px; }
+  .nav div { display: flex; flex-direction: column; align-items: center; gap: 6px; flex: 1 1 0; padding: 10px 0; border-radius: 14px; color: var(--mute); font-size: 11px; }
+  .nav div.on { background: var(--ink); color: var(--bg); }
+
+  .notes { margin: 0; padding-left: 1.2em; max-width: 46em; display: flex; flex-direction: column; gap: 6px; }
+  footer { color: var(--mute); font-size: 12px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="label"><b>●</b> Icon experiment / 24 × 24</div>
+    <h1>LUCIDE<span>.</span>DOT</h1>
+    <p>Lucide の線のアイコン全部を、等間隔の点の並びに置き換えた試作です。元の形のデータをその場で点に変えているので、右のつまみで粗さや太さを変えると全部のアイコンが一緒に変わります。</p>
+  </header>
+
+  <section>
+    <div class="stage">
+      <div class="display">
+        <div class="display-top">
+          <span class="label rec">Dot matrix</span>
+          <span class="label" id="js-display-grid"></span>
+        </div>
+        <div class="display-main">
+          <div class="big" id="js-display-big"></div>
+          <div class="orig">
+            <div id="js-display-orig"></div>
+            <span class="label">元の Lucide</span>
+          </div>
+        </div>
+        <div>
+          <div class="display-name" id="js-display-name"></div>
+          <div class="display-meta">
+            <span class="label" id="js-display-count"></span>
+            <span class="label" id="js-display-license"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="field">
+          <div class="field-head"><span class="label">点の細かさ</span></div>
+          <div class="seg" id="js-pitch">
+            <label><input type="radio" name="pitch" id="js-pitch-fine" value="1"><span>細かい 23 × 23</span></label>
+            <label><input type="radio" name="pitch" id="js-pitch-mid" value="1.5" checked><span>中 15 × 15</span></label>
+            <label><input type="radio" name="pitch" id="js-pitch-coarse" value="2"><span>粗い 11 × 11</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-head"><label class="label" for="js-weight">元の線の太さ</label><output id="js-weight-out" for="js-weight"></output></div>
+          <input type="range" id="js-weight" min="0.6" max="3" step="0.1" value="1.6">
+        </div>
+        <div class="field">
+          <div class="field-head"><label class="label" for="js-threshold">点を灯す基準（線が重なる割合）</label><output id="js-threshold-out" for="js-threshold"></output></div>
+          <input type="range" id="js-threshold" min="0.1" max="0.9" step="0.05" value="0.4">
+        </div>
+        <div class="field">
+          <div class="field-head"><span class="label">点の形</span></div>
+          <div class="seg" id="js-shape">
+            <label><input type="radio" name="shape" id="js-shape-circle" value="circle" checked><span>丸</span></label>
+            <label><input type="radio" name="shape" id="js-shape-square" value="square"><span>四角</span></label>
+            <label><input type="radio" name="shape" id="js-shape-halftone" value="halftone"><span>濃淡で大きさを変える</span></label>
+          </div>
+        </div>
+        <label class="check"><input type="checkbox" id="js-fit" checked>点の位置に合わせて形を整える（外すと元の位置のまま）</label>
+        <label class="check"><input type="checkbox" id="js-square" checked>小さな角の丸みは直角に引く</label>
+        <label class="check"><input type="checkbox" id="js-show-off" checked>灯っていない点も薄く見せる</label>
+        <div class="field">
+          <button type="button" class="pill-btn" id="js-copy">表示中のアイコンの SVG をコピー</button>
+          <pre class="code" id="js-code"></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label" id="js-count">Icons</div>
+    <h2>全部の一覧（押すと上のパネルに出ます）</h2>
+    <input type="search" class="search" id="js-search" placeholder="名前で絞り込む（例: calendar, arrow, file）" aria-label="アイコンの名前で絞り込む" autocomplete="off">
+    <div class="grid-scroll" id="js-grid-scroll"><div class="grid" id="js-grid"><p class="lead" id="js-loading">アイコンのデータを読み込んでいます…</p></div></div>
+  </section>
+
+  <section>
+    <div class="label">Actual size</div>
+    <h2>実際に使う大きさで比べる</h2>
+    <p class="lead">点の数は大きさに関係なく同じなので、小さく表示すると 1 つの点が 1 ピクセルより小さくなって潰れます。16〜20px で使うなら「粗い」、32px 以上なら「細かい」が読みやすくなります。</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th></th><th>16px</th><th>20px</th><th>24px</th><th>32px</th><th>48px</th><th>72px</th></tr></thead>
+        <tbody id="js-sizes"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">In context</div>
+    <h2>画面に置いた例</h2>
+    <p class="lead">白・黒・灰色だけで組み、赤は 1 か所だけに使う組み方に載せています。上のつまみの設定がここにも反映されます。</p>
+    <div class="mock">
+      <div class="card">
+        <div class="row" style="justify-content: space-between;">
+          <span class="label rec">Session</span>
+          <span data-icon="timer" data-size="24"></span>
+        </div>
+        <div class="time">00:42:18</div>
+        <div class="row">
+          <button type="button" class="pill-btn solid" id="js-mock-start"><span data-icon="play" data-size="20"></span>開始</button>
+          <button type="button" class="pill-btn" id="js-mock-stop"><span data-icon="square" data-size="20"></span>停止</button>
+          <button type="button" class="pill-btn danger" id="js-mock-delete"><span data-icon="trash" data-size="20"></span>削除</button>
+        </div>
+      </div>
+      <div class="card">
+        <span class="label">Notifications</span>
+        <ul class="list">
+          <li><span data-icon="bell" data-size="24"></span><span>確認待ちが 2 件あります</span></li>
+          <li><span data-icon="circle-check" data-size="24"></span><span>下書きを保存しました</span></li>
+          <li class="warn"><span data-icon="triangle-alert" data-size="24"></span><span>期限の近い予定が 1 件あります</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="label">Navigation</span>
+        <div class="nav">
+          <div class="on"><span data-icon="house" data-size="32"></span>ホーム</div>
+          <div><span data-icon="search" data-size="32"></span>検索</div>
+          <div><span data-icon="calendar-clock" data-size="32"></span>予定</div>
+          <div><span data-icon="settings" data-size="32"></span>設定</div>
+        </div>
+        <div class="row">
+          <span data-icon="pin" data-size="16"></span><span data-icon="copy" data-size="16"></span><span data-icon="pencil" data-size="16"></span><span data-icon="download" data-size="16"></span>
+          <span class="label">16px で並べた場合</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">Notes</div>
+    <h2>この試作の作り方</h2>
+    <ul class="notes">
+      <li>点は Lucide の 24 × 24 の座標に合わせて等間隔に置いています。「細かい」は元の座標 1 つごとに点が 1 つ並ぶので、縦線と横線がきれいに 1 列に収まります。</li>
+      <li>線が点と点の間に落ちると 2 列に太ったり、円の左右で並びが変わったりします。そこで、つながっている部品ごとに大きさと位置を点の間隔の倍数に寄せ、中の縦線・横線も点の列に乗せてから点にしています。円は縦横を同じ大きさに寄せるので、左右・上下が対称になります。円の中の ＋ のように中心が重なっている部品は、同じ中心にそろえて寄せます。箱の中の × のようにほかの線にはさまれた部品は、寄せたあとの線と線の真ん中に置き直します。破線のように同じ線の続きになっている線は、1 つの形としてまとめて寄せます。同じ大きさの部品が等間隔に 3 つ以上並んでいるときは、等間隔のまま寄せます。</li>
+      <li>直線と直線の間の小さな角の丸み（半径 2.5 まで）は、点では表せないので、2 本の線が交わる点まで延ばして角を尖らせています（四角の角は直角に、再生の三角の先は尖らせる）。カプセル形の半円の端や、D の右側のように形そのものが丸い所は丸いまま残します。</li>
+      <li>まっすぐな斜めの線は、両端をいちばん近い点に合わせ、1 列進むごとに点を 1 個だけ灯して引いています。重なりの割合で決めると、傾きによって太さが乱れるためです。45 度に近い線（傾きが 0.8〜1.25）は 45 度に寄せて引き、斜めの線がつながっているときは前の線の終わりの点から続けます。</li>
+      <li>曲線どうしが鋭く出会うくぼみ（ハートの上のくぼみなど）は、点 1 個より浅くても 1 点分凹ませています。そのままだと埋まって、小さなハートがひし形に見えるためです。</li>
+      <li>正円は、上下は 1 列ごと、左右は 1 行ごとに、円周にいちばん近い点を 1 個だけ灯して描いています。重なりの割合で決めると、段差の所で角が太って四角く見えるためです。</li>
+      <li>点を灯すかどうかは線 1 本ごとに決めています。まとめて決めると、× のように線が交わる所で隣の点まで灯って形がつぶれるためです。</li>
+      <li>円のまわりに短い線が 6 本以上生えている形（ウイルスのトゲ）は、そのままではトゲが点 1 個分しかなく円に埋もれるので、円の直径を点 2 個分小さくして、トゲを外へ伸ばしています。</li>
+      <li>位置を寄せるときの端数は、枠の中心に近いほうへ丸めます。点は 15 × 15 で中央の列があるので、中心にある部品は中央の列に合わせ、左右対称の形が点にしても左右対称になるようにしています。それでも食い違う分は、元の形が左右対称なら左半分を右へ写して、必ず対称にしています（上下対称も同じ）。更新マークのように 180 度回すと重なる形は、片方の寄せ方を半回転してもう片方に使います。サイコロの目のようにほかの部品の中にある小さな点は、入れ物の伸び縮みに合わせて置きます。A と B の底のように、元の形で端がそろっている横並びの部品は、点にしても端をそろえます。同じ形の部品が平行に並んでいるとき（重なった層の 2 段目と 3 段目など）は、1 つ目の寄せ方をそのままずらして使い、同じ点の並びにします。左右のタイヤのように元の形で同じ大きさの部品は、点にしても同じ大きさにそろえます。</li>
+      <li>元の線を「元の線の太さ」で描き、点のまわりの升目に線がどれだけ重なるかを測って、基準を超えた点だけを灯しています。</li>
+      <li>出来上がりは元と同じ 24 × 24 の枠の SVG（1 つの path）なので、色は文字色に追従し、Lucide と同じ場所にそのまま差し替えられます。</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="label">License</div>
+    <h2>ライセンス</h2>
+    <p class="lead">点にしたアイコンは、元になった Lucide のアイコンのライセンスに従います。アイコンごとのライセンスは、一覧の名前の下と、上のパネルに出ています。Lucide の公式のものではありません。</p>
+    <div class="scroll">
+      <table class="license-table">
+        <thead><tr><th>対象</th><th>ライセンス</th><th>著作権表示</th></tr></thead>
+        <tbody>
+          <tr><td>Lucide のアイコン（<span id="js-license-isc">-</span> 個）</td><td>ISC License</td><td>Copyright (c) 2026 Lucide Icons and Contributors</td></tr>
+          <tr><td>Feather から引き継がれたアイコン（<span id="js-license-mit">-</span> 個）</td><td>MIT License</td><td>Copyright (c) 2013-present Cole Bemis</td></tr>
+          <tr><td>変換のスクリプトとこのページ</td><td>MIT License</td><td>Copyright (c) 2026 PaperFace1000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lead">ライセンスの全文: <a href="LICENSE-lucide.txt">LICENSE-lucide.txt</a>（Lucide と Feather）、<a href="LICENSE">LICENSE</a>（変換のスクリプトとこのページ）。点にしたアイコンを配るときは、LICENSE-lucide.txt を一緒に配ってください。</p>
+  </section>
+
+  <footer>アイコンの形: <a href="https://lucide.dev">Lucide</a>（ISC License。Feather 由来のアイコンは MIT License）。このページはそれを点の並びに変換して表示しています。</footer>
+</div>
+
+<canvas id="js-raster" width="192" height="192" hidden></canvas>
+
+<script>
+  let ICONS = {};
+  // アイコンごとのライセンス（"ISC" か "MIT"）。icons.json の 3 つ目の値
+  let LICENSES = {};
+  // 表記は Lucide の LICENSE の著作権表示に合わせる。Lucide を新しい版にしたら、LICENSE-lucide.txt と一緒にここも直すこと
+  const LICENSE_INFO = {
+    ISC: { label: "ISC License", copyright: "Copyright (c) 2026 Lucide Icons and Contributors", origin: "Lucide" },
+    MIT: { label: "MIT License", copyright: "Copyright (c) 2013-present Cole Bemis", origin: "Feather 由来" },
+  };
+  const SCALE = 8;
+  const BOX = 24;
+  const DEFAULT_WEIGHT = { 1: 1, 1.5: 1.6, 2: 2 };
+  const state = { pitch: 1.5, weight: 1.6, threshold: 0.4, shape: "circle", showOff: true, fit: true, square: true, cavity: true, selected: "calendar-clock" };
+
+  const canvas = document.getElementById("js-raster");
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+  const num = (value) => Number.parseFloat(value ?? 0);
+
+  const drawNode = ([tag, attrs]) => {
+    const filled = attrs.fill === "currentColor";
+    if (tag === "path") {
+      const path = new Path2D(attrs.d);
+      if (filled) ctx.fill(path);
+      ctx.stroke(path);
+      return;
+    }
+    ctx.beginPath();
+    if (tag === "circle") {
+      ctx.arc(num(attrs.cx), num(attrs.cy), num(attrs.r), 0, Math.PI * 2);
+    } else if (tag === "rect") {
+      ctx.roundRect(num(attrs.x), num(attrs.y), num(attrs.width), num(attrs.height), num(attrs.rx ?? attrs.ry));
+    } else if (tag === "ellipse") {
+      ctx.ellipse(num(attrs.cx), num(attrs.cy), num(attrs.rx), num(attrs.ry), 0, 0, Math.PI * 2);
+    } else if (tag === "line") {
+      ctx.moveTo(num(attrs.x1), num(attrs.y1));
+      ctx.lineTo(num(attrs.x2), num(attrs.y2));
+    } else if (tag === "polyline" || tag === "polygon") {
+      const points = attrs.points.trim().split(/[\s,]+/).map(Number);
+      for (let index = 0; index < points.length; index += 2) {
+        if (index === 0) ctx.moveTo(points[index], points[index + 1]);
+        else ctx.lineTo(points[index], points[index + 1]);
+      }
+      if (tag === "polygon") ctx.closePath();
+    }
+    if (filled) ctx.fill();
+    ctx.stroke();
+  };
+
+  // ---- 点の位置に合わせて形を整える ----
+  // 形を細かい折れ線にばらし、つながっている部品ごとに「大きさ」と「位置」を点の間隔の倍数へ寄せてから描く。
+  // 寄せないと、点と点の間に落ちた線が 2 列に太ったり、円の左右で点の並びが変わったりする。
+  const SVG_NS = "http://www.w3.org/2000/svg";
+  const STEP = 0.2;
+  const probe = document.createElementNS(SVG_NS, "svg");
+  probe.setAttribute("aria-hidden", "true");
+  probe.style.cssText = "position: absolute; width: 0; height: 0; overflow: hidden;";
+  const probePath = document.createElementNS(SVG_NS, "path");
+  probe.append(probePath);
+  document.body.append(probe);
+
+  const nodeToPath = ([tag, attrs]) => {
+    if (tag === "path") return attrs.d;
+    if (tag === "circle" || tag === "ellipse") {
+      const rx = num(attrs.rx ?? attrs.r);
+      const ry = num(attrs.ry ?? attrs.r);
+      return `M${num(attrs.cx) - rx} ${num(attrs.cy)}a${rx} ${ry} 0 1 0 ${rx * 2} 0a${rx} ${ry} 0 1 0 ${-rx * 2} 0z`;
+    }
+    if (tag === "rect") {
+      const [x, y, w, h] = [num(attrs.x), num(attrs.y), num(attrs.width), num(attrs.height)];
+      const rx = Math.min(num(attrs.rx ?? attrs.ry), w / 2);
+      const ry = Math.min(num(attrs.ry ?? attrs.rx), h / 2);
+      return `M${x + rx} ${y}h${w - rx * 2}a${rx} ${ry} 0 0 1 ${rx} ${ry}v${h - ry * 2}a${rx} ${ry} 0 0 1 ${-rx} ${ry}h${rx * 2 - w}a${rx} ${ry} 0 0 1 ${-rx} ${-ry}v${ry * 2 - h}a${rx} ${ry} 0 0 1 ${rx} ${-ry}z`;
+    }
+    if (tag === "line") return `M${attrs.x1} ${attrs.y1}L${attrs.x2} ${attrs.y2}`;
+    const points = attrs.points.trim().split(/[\s,]+/);
+    let d = "";
+    for (let index = 0; index < points.length; index += 2) d += `${index === 0 ? "M" : "L"}${points[index]} ${points[index + 1]}`;
+    return tag === "polygon" ? `${d}z` : d;
+  };
+
+  const samplePath = (d, fill) => {
+    const starts = [...d.matchAll(/[Mm]/g)].map((match) => match.index);
+    return starts.map((start, index) => {
+      let current = { x: 0, y: 0 };
+      if (index > 0) {
+        probePath.setAttribute("d", d.slice(0, start));
+        current = probePath.getPointAtLength(probePath.getTotalLength());
+      }
+      let sub = d.slice(start, starts[index + 1] ?? d.length);
+      if (sub[0] === "m" && index > 0) {
+        const pair = /^m\s*([-+]?(?:\d*\.\d+|\d+\.?)(?:e[-+]?\d+)?)[\s,]*([-+]?(?:\d*\.\d+|\d+\.?)(?:e[-+]?\d+)?)[\s,]*/i.exec(sub);
+        const rest = sub.slice(pair[0].length);
+        sub = `M${current.x + Number(pair[1])} ${current.y + Number(pair[2])}${/^[-+.\d]/.test(rest) ? "l" : ""}${rest}`;
+      }
+      probePath.setAttribute("d", sub);
+      const length = probePath.getTotalLength();
+      const count = Math.max(1, Math.ceil(length / STEP));
+      const points = [];
+      for (let step = 0; step <= count; step += 1) {
+        const point = probePath.getPointAtLength((length * step) / count);
+        points.push([point.x, point.y]);
+      }
+      return { points, closed: /[zZ]\s*$/.test(sub), fill };
+    });
+  };
+
+  const bounds = (polys) => {
+    const box = { minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity };
+    for (const poly of polys) {
+      for (const [x, y] of poly.points) {
+        if (x < box.minX) box.minX = x;
+        if (x > box.maxX) box.maxX = x;
+        if (y < box.minY) box.minY = y;
+        if (y > box.maxY) box.maxY = y;
+      }
+    }
+    return box;
+  };
+
+  const TOUCH = 0.9;
+  const touches = (a, b) => {
+    if (a.box.minX - b.box.maxX > TOUCH || b.box.minX - a.box.maxX > TOUCH) return false;
+    if (a.box.minY - b.box.maxY > TOUCH || b.box.minY - a.box.maxY > TOUCH) return false;
+    for (let i = 0; i < a.points.length; i += 2) {
+      const [ax, ay] = a.points[i];
+      for (let j = 0; j < b.points.length; j += 2) {
+        const dx = ax - b.points[j][0];
+        const dy = ay - b.points[j][1];
+        if (dx * dx + dy * dy < TOUCH * TOUCH) return true;
+      }
+    }
+    return false;
+  };
+
+  // 縦線・横線の位置（axis 0: 縦線の x、axis 1: 横線の y）を、長さの合計つきで拾う
+  const straightRuns = (polys, axis) => {
+    const runs = new Map();
+    const other = 1 - axis;
+    for (const { points } of polys) {
+      let start = 0;
+      for (let index = 1; index <= points.length; index += 1) {
+        if (index < points.length && Math.abs(points[index][axis] - points[start][axis]) < 0.02) continue;
+        const length = Math.abs(points[index - 1][other] - points[start][other]);
+        if (length >= 1.2) {
+          const key = Math.round(points[start][axis] * 20);
+          runs.set(key, { pos: points[start][axis], weight: (runs.get(key)?.weight ?? 0) + length });
+        }
+        start = index;
+      }
+    }
+    return [...runs.values()].sort((a, b) => b.weight - a.weight);
+  };
+
+  // 横線と縦線の間にある小さな丸い角（半径 2.5 まで）を、2 本の線が交わる 1 点に置き換えて直角にする。
+  // 点の間隔より小さい丸みは点では表せず、角の点が欠けたり線がずれたりする原因になる。
+  const MAX_CORNER = 2.6;
+  const squareCorners = (poly) => {
+    const { points } = poly;
+    // 同じ向きに続く部分を「直線」、それ以外を「曲線」として区切る
+    const groups = [];
+    for (let index = 0; index < points.length - 1; index += 1) {
+      const dx = points[index + 1][0] - points[index][0];
+      const dy = points[index + 1][1] - points[index][1];
+      const length = Math.hypot(dx, dy);
+      if (length < 1e-4) continue;
+      const direction = [dx / length, dy / length];
+      const last = groups[groups.length - 1];
+      if (last && direction[0] * last.direction[0] + direction[1] * last.direction[1] > 0.9995) last.end = index + 1;
+      else groups.push({ direction, start: index, end: index + 1 });
+    }
+    const span = (section) => Math.hypot(points[section.end][0] - points[section.start][0], points[section.end][1] - points[section.start][1]);
+    const sections = [];
+    for (const group of groups) {
+      const type = span(group) >= 0.3 ? "S" : "C";
+      const last = sections[sections.length - 1];
+      if (type === "C" && last && last.type === "C") last.end = group.end;
+      else sections.push({ ...group, type });
+    }
+    const cornerOf = (index) => {
+      const section = sections[index];
+      if (section.type !== "C") return null;
+      const prev = sections[index - 1] ?? (poly.closed ? sections[sections.length - 1] : undefined);
+      const next = sections[index + 1] ?? (poly.closed ? sections[0] : undefined);
+      if (!prev || !next || prev === section || next === section) return null;
+      if (prev.type !== "S" || next.type !== "S") return null;
+      const [ax, ay] = points[section.start];
+      const [bx, by] = points[section.end];
+      // 半径 2.5 の丸い角は、両端の距離が 3.6 ほどになる。それより大きい丸みは形そのものなので残す
+      const chord = Math.hypot(bx - ax, by - ay);
+      if (chord > MAX_CORNER * 1.42) return null;
+      // 両側の直線がどちらも丸みより短いときは、角の飾りではなく形そのものの丸み（D の右側など）なので残す
+      if (Math.max(span(prev), span(next)) < (0.9 * chord) / 1.42) return null;
+      // 2 本の直線を延ばして交わる点を角にする。ほぼ平行（カプセル形の端など）なら角にしない
+      const [px, py] = prev.direction;
+      const [nx, ny] = next.direction;
+      const cross = px * ny - py * nx;
+      if (Math.abs(cross) < 0.2) return null;
+      const along = ((bx - ax) * ny - (by - ay) * nx) / cross;
+      const corner = [ax + px * along, ay + py * along];
+      if (along < -0.01 || along > 3.5 || Math.hypot(corner[0] - bx, corner[1] - by) > 3.5) return null;
+      // もともと尖っている角は、折れ線にばらしたときに 1 区間ぶん欠けているだけなので、そのまま交点に戻す
+      if (section.end - section.start <= 1) return corner;
+      const [mx, my] = points[Math.round((section.start + section.end) / 2)];
+      const [cx, cy] = [(ax + bx) / 2, (ay + by) / 2];
+      if ((mx - cx) * (corner[0] - cx) + (my - cy) * (corner[1] - cy) <= 0) return null;
+      return corner;
+    };
+    const result = [points[0]];
+    sections.forEach((section, index) => {
+      const corner = cornerOf(index);
+      if (corner) result.push(corner);
+      if (corner && index === sections.length - 1) return;
+      for (let at = corner ? section.end : section.start + 1; at <= section.end; at += 1) result.push(points[at]);
+    });
+    // 書き出しの角を尖らせたときは、その角から始まる並びに直す（角が線の途中に来ると、辺が 2 本に分かれてしまう）
+    if (poly.closed && sections.length > 0 && cornerOf(0)) return { ...poly, points: [...result.slice(1), result[1]] };
+    return { ...poly, points: result };
+  };
+
+  // 開いた円弧（電源マークの輪など）が、どの円の一部かを返す。円でなければ null
+  // 3 点を通る円が、その並びの全部の点を通るかを調べて、通るなら円の外枠を返す
+  const circleThrough = (points, minSweep) => {
+    if (points.length < 12) return null;
+    const [a, b, c] = [points[0], points[Math.floor(points.length / 2)], points[points.length - 1]];
+    const d = 2 * (a[0] * (b[1] - c[1]) + b[0] * (c[1] - a[1]) + c[0] * (a[1] - b[1]));
+    if (Math.abs(d) < 1e-6) return null;
+    const sq = (point) => point[0] * point[0] + point[1] * point[1];
+    const cx = (sq(a) * (b[1] - c[1]) + sq(b) * (c[1] - a[1]) + sq(c) * (a[1] - b[1])) / d;
+    const cy = (sq(a) * (c[0] - b[0]) + sq(b) * (a[0] - c[0]) + sq(c) * (b[0] - a[0])) / d;
+    const r = Math.hypot(a[0] - cx, a[1] - cy);
+    let length = 0;
+    for (let index = 1; index < points.length; index += 1) length += Math.hypot(points[index][0] - points[index - 1][0], points[index][1] - points[index - 1][1]);
+    if (r < 1.5 || r > 12 || length / r < minSweep) return null;
+    if (points.some((point) => Math.abs(Math.hypot(point[0] - cx, point[1] - cy) - r) > 0.08)) return null;
+    if (cx - r < 0.5 || cy - r < 0.5 || cx + r > BOX - 0.5 || cy + r > BOX - 0.5) return null;
+    return { minX: cx - r, maxX: cx + r, minY: cy - r, maxY: cy + r };
+  };
+  // 形の中でいちばん長く続く「ゆるやかに曲がる部分」が半円以上の円弧なら、その円の外枠を返す（吹き出しの丸い部分など）
+  const mainCircle = (poly) => {
+    const { points } = poly;
+    let best = [0, 0];
+    let start = 0;
+    for (let index = 1; index < points.length - 1; index += 1) {
+      const [ax, ay] = [points[index][0] - points[index - 1][0], points[index][1] - points[index - 1][1]];
+      const [bx, by] = [points[index + 1][0] - points[index][0], points[index + 1][1] - points[index][1]];
+      const turn = Math.abs(Math.atan2(ax * by - ay * bx, ax * bx + ay * by));
+      if (turn < 0.002 || turn > 0.3) start = index;
+      else if (index + 1 - start > best[1] - best[0]) best = [start, index + 1];
+    }
+    const circle = circleThrough(points.slice(best[0], best[1] + 1), Math.PI);
+    if (!circle) return null;
+    const box = bounds([poly]);
+    return circle.maxX - circle.minX >= 0.7 * Math.max(box.maxX - box.minX, box.maxY - box.minY) ? circle : null;
+  };
+  const arcCircle = (poly, perimeter) => {
+    const { points } = poly;
+    if (poly.closed || points.length < 12) return null;
+    const [a, b, c] = [points[0], points[Math.floor(points.length / 2)], points[points.length - 1]];
+    const d = 2 * (a[0] * (b[1] - c[1]) + b[0] * (c[1] - a[1]) + c[0] * (a[1] - b[1]));
+    if (Math.abs(d) < 1e-6) return null;
+    const sq = (point) => point[0] * point[0] + point[1] * point[1];
+    const cx = (sq(a) * (b[1] - c[1]) + sq(b) * (c[1] - a[1]) + sq(c) * (a[1] - b[1])) / d;
+    const cy = (sq(a) * (c[0] - b[0]) + sq(b) * (a[0] - c[0]) + sq(c) * (b[0] - a[0])) / d;
+    const r = Math.hypot(a[0] - cx, a[1] - cy);
+    if (r < 1.5 || r > 12 || perimeter / r < 2.6) return null;
+    if (points.some((point) => Math.abs(Math.hypot(point[0] - cx, point[1] - cy) - r) > 0.06)) return null;
+    if (cx - r < 0.5 || cy - r < 0.5 || cx + r > BOX - 0.5 || cy + r > BOX - 0.5) return null;
+    return { minX: cx - r, maxX: cx + r, minY: cy - r, maxY: cy + r };
+  };
+
+  // 折れ線の中から、長さ 2 以上のまっすぐな斜めの線（縦でも横でもない線）を拾う。start・end は points の番号
+  const findDiagonals = (points) => {
+    const result = [];
+    let start = 0;
+    let base = null;
+    const close = (end) => {
+      const length = Math.hypot(points[end][0] - points[start][0], points[end][1] - points[start][1]);
+      if (base && Math.abs(base[0]) > 0.08 && Math.abs(base[1]) > 0.08 && length >= 2) result.push({ start, end });
+    };
+    for (let index = 0; index < points.length - 1; index += 1) {
+      const dx = points[index + 1][0] - points[index][0];
+      const dy = points[index + 1][1] - points[index][1];
+      const length = Math.hypot(dx, dy);
+      if (length < 1e-6) continue;
+      const direction = [dx / length, dy / length];
+      if (base && direction[0] * base[0] + direction[1] * base[1] > 0.9995) continue;
+      if (base) close(index);
+      start = index;
+      base = direction;
+    }
+    if (base) close(points.length - 1);
+    return result;
+  };
+
+  // 破線のように「片方の端の先に、同じ向きでもう片方の端がある」2 本を、同じ線の続きとみなす。
+  // 別々に寄せると、同じ辺の上の破線が 1 点ずつずれてばらばらになる。
+  const continues = (a, b) => {
+    if (a.closed || b.closed) return false;
+    const tiny = (poly) => Math.max(poly.box.maxX - poly.box.minX, poly.box.maxY - poly.box.minY) < 0.5;
+    if (tiny(a) || tiny(b)) return false;
+    const ends = (poly) => {
+      const { points } = poly;
+      const back = Math.min(3, points.length - 1);
+      const out = (tip, inner) => {
+        const length = Math.hypot(tip[0] - inner[0], tip[1] - inner[1]);
+        return length < 1e-6 ? null : { tip, direction: [(tip[0] - inner[0]) / length, (tip[1] - inner[1]) / length] };
+      };
+      return [out(points[0], points[back]), out(points[points.length - 1], points[points.length - 1 - back])].filter(Boolean);
+    };
+    return ends(a).some((from) =>
+      ends(b).some((to) => {
+        const gap = [to.tip[0] - from.tip[0], to.tip[1] - from.tip[1]];
+        const distance = Math.hypot(gap[0], gap[1]);
+        if (distance < 0.5 || distance > 4.2) return false;
+        const forward = (from.direction[0] * gap[0] + from.direction[1] * gap[1]) / distance;
+        const backward = -(to.direction[0] * gap[0] + to.direction[1] * gap[1]) / distance;
+        return forward > 0.9 && backward > 0.9;
+      }),
+    );
+  };
+
+  // 曲線と曲線が 60 度以上の角度で出会う点（ハートの上のくぼみなど）の番号を返す。
+  // 直線が関わる角は別の処理で尖らせているので、ここでは両側とも曲がっている所だけを拾う
+  const findCusps = (points) => {
+    const unit = (from, to) => {
+      const length = Math.hypot(to[0] - from[0], to[1] - from[1]);
+      return length < 1e-6 ? null : [(to[0] - from[0]) / length, (to[1] - from[1]) / length];
+    };
+    const straight = (from, to) => {
+      const direction = unit(points[from], points[to]);
+      if (!direction) return true;
+      for (let index = from + 1; index < to; index += 1) {
+        const offset = Math.abs((points[index][0] - points[from][0]) * direction[1] - (points[index][1] - points[from][1]) * direction[0]);
+        if (offset > 0.03) return false;
+      }
+      return true;
+    };
+    const sharp = [];
+    for (let index = 9; index < points.length - 9; index += 1) {
+      const before = unit(points[index - 3], points[index - 1]);
+      const after = unit(points[index + 1], points[index + 3]);
+      if (before && after && before[0] * after[0] + before[1] * after[1] < 0.5) sharp.push(index);
+    }
+    const cusps = [];
+    for (let at = 0; at < sharp.length; ) {
+      let last = at;
+      while (last + 1 < sharp.length && sharp[last + 1] - sharp[last] <= 1) last += 1;
+      const index = sharp[Math.floor((at + last) / 2)];
+      if (!straight(index - 9, index - 2) && !straight(index + 2, index + 9)) cusps.push(index);
+      at = last + 1;
+    }
+    return cusps;
+  };
+
+  const flatCache = new Map();
+  const flatten = (name) => {
+    const cacheKey = `${name}|${state.square}`;
+    if (flatCache.has(cacheKey)) return flatCache.get(cacheKey);
+    const sampled = ICONS[name].flatMap((node) => samplePath(nodeToPath(node), node[1].fill === "currentColor"));
+    const polys = state.square ? sampled.map(squareCorners) : sampled;
+    for (const poly of polys) {
+      poly.diagonals = poly.fill ? [] : findDiagonals(poly.points);
+      poly.cusps = poly.fill ? [] : findCusps(poly.points);
+      poly.box = bounds([poly]);
+      // その線自身が左右対称（mirror[0]）・上下対称（mirror[1]）か。コントローラーの外枠のように、
+      // アイコン全体は対称でなくても、線 1 本は対称なことがある
+      poly.mirror = [0, 1].map((axis) => {
+        const size = axis === 0 ? poly.box.maxX - poly.box.minX : poly.box.maxY - poly.box.minY;
+        if (size < 3 || poly.points.length < 12) return false;
+        const middle = axis === 0 ? (poly.box.minX + poly.box.maxX) / 2 : (poly.box.minY + poly.box.maxY) / 2;
+        return poly.points.every((point, index) => {
+          if (index % 3 !== 0) return true;
+          const mirrored = [...point];
+          mirrored[axis] = 2 * middle - point[axis];
+          return poly.points.some((other) => Math.abs(other[0] - mirrored[0]) < 0.2 && Math.abs(other[1] - mirrored[1]) < 0.2);
+        });
+      });
+      // 円のように丸く閉じた形は、ほかの線とつながっていても単独で寄せる（つなげて伸び縮みさせると円がゆがむ）
+      let perimeter = 0;
+      for (let index = 1; index < poly.points.length; index += 1) {
+        perimeter += Math.hypot(poly.points[index][0] - poly.points[index - 1][0], poly.points[index][1] - poly.points[index - 1][1]);
+      }
+      const straight = [0, 1].flatMap((axis) => straightRuns([poly], axis)).reduce((sum, run) => sum + run.weight, 0);
+      poly.round = poly.closed && perimeter > 3 && straight < perimeter * 0.2;
+      const [midX, midY] = [(poly.box.minX + poly.box.maxX) / 2, (poly.box.minY + poly.box.maxY) / 2];
+      const half = (poly.box.maxX - poly.box.minX) / 2;
+      poly.isCircle =
+        poly.round && Math.abs(half - (poly.box.maxY - poly.box.minY) / 2) < 0.05 && poly.points.every((point) => Math.abs(Math.hypot(point[0] - midX, point[1] - midY) - half) < 0.1);
+      const arc = arcCircle(poly, perimeter);
+      poly.isArc = Boolean(arc);
+      poly.circleBox = arc ?? (poly.round ? null : mainCircle(poly));
+      // 半径 1 ほどの小さな円は、元の太さ 2 の線では中まで埋まった「点」に見える。寄せて大きくなっても中が抜けないように塗る
+      if (poly.round && Math.max(poly.box.maxX - poly.box.minX, poly.box.maxY - poly.box.minY) <= 2.2) poly.fill = true;
+    }
+    const parent = polys.map((_, index) => index);
+    const find = (index) => (parent[index] === index ? index : (parent[index] = find(parent[index])));
+    for (let i = 0; i < polys.length; i += 1) {
+      for (let j = i + 1; j < polys.length; j += 1) {
+        if (polys[i].round || polys[j].round) continue;
+        if (find(i) !== find(j) && (touches(polys[i], polys[j]) || continues(polys[i], polys[j]))) parent[find(i)] = find(j);
+      }
+    }
+    const byRoot = new Map();
+    polys.forEach((poly, index) => {
+      const root = find(index);
+      byRoot.set(root, [...(byRoot.get(root) ?? []), poly]);
+    });
+    const parts = [...byRoot.values()].map((group) => ({
+      polys: group,
+      // 円弧 1 本だけの部品や、吹き出しのように大きな円弧にしっぽが付いた部品は、もとの円全体の大きさで寄せる（弧の端から端の大きさで寄せると、縦横の縮み方が変わって円でなくなる）
+      box: group.length === 1 && group[0].circleBox ? group[0].circleBox : bounds(group),
+      runs: [0, 1].map((axis) => {
+        const runs = straightRuns(group, axis);
+        if (group.length < 2) return runs;
+        // soft: 線 1 本ごとの端の位置。縦線・横線より後に、空いていれば点の列に乗せる。
+        // これが無いと、曲線だけでできた形（仮面など）がつながった部品の中で、内側の形の端が点と点の間に落ちる
+        group.forEach((poly, number) => {
+          for (const pos of axis === 0 ? [poly.box.minX, poly.box.maxX] : [poly.box.minY, poly.box.maxY]) {
+            if (!runs.some((run) => !run.soft && Math.abs(run.pos - pos) < 0.05)) runs.push({ pos, weight: 0.5, soft: number + 1 });
+          }
+        });
+        return runs;
+      }),
+    }));
+    // ほかの部品の線にはさまれて、その真ん中に置かれている部品を控える（箱の中の × など）。
+    // axis 0 は左右の壁、axis 1 は上下の壁。壁は「その部品と同じ高さ（幅）の範囲で、いちばん近い線」
+    const diagonal = (box) => Math.hypot(box.maxX - box.minX, box.maxY - box.minY);
+    parts.rels = [];
+    parts.forEach((child, childIndex) => {
+      for (const axis of [0, 1]) {
+        const cross = 1 - axis;
+        const low = axis === 0 ? child.box.minX : child.box.minY;
+        const high = axis === 0 ? child.box.maxX : child.box.maxY;
+        const crossLow = axis === 0 ? child.box.minY : child.box.minX;
+        const crossHigh = axis === 0 ? child.box.maxY : child.box.maxX;
+        let before = null;
+        let after = null;
+        parts.forEach((owner, ownerIndex) => {
+          if (ownerIndex === childIndex || diagonal(owner.box) <= diagonal(child.box)) return;
+          for (const poly of owner.polys) {
+            for (const point of poly.points) {
+              if (point[cross] < crossLow - 0.3 || point[cross] > crossHigh + 0.3) continue;
+              if (point[axis] < low - 0.3 && (!before || point[axis] > before.pos)) before = { owner: ownerIndex, pos: point[axis] };
+              if (point[axis] > high + 0.3 && (!after || point[axis] < after.pos)) after = { owner: ownerIndex, pos: point[axis] };
+            }
+          }
+        });
+        if (before && after && Math.abs(low - before.pos - (after.pos - high)) < 0.35) {
+          parts.rels.push({ axis, child: childIndex, before, after });
+        }
+      }
+    });
+    // 180 度回すともう片方に重なる部品の組を控える。別々に寄せると、上半分と下半分の形が食い違う
+    const pointsOf = (part) => part.polys.flatMap((poly) => poly.points);
+    const overlaps = (from, to, cx, cy) =>
+      from.every((point, index) => {
+        if (index % 4 !== 0) return true;
+        const x = 2 * cx - point[0];
+        const y = 2 * cy - point[1];
+        return to.some((other) => Math.abs(other[0] - x) < 0.2 && Math.abs(other[1] - y) < 0.2);
+      });
+    const middleOf = (box) => [(box.minX + box.maxX) / 2, (box.minY + box.maxY) / 2];
+    parts.rotPairs = [];
+    const paired = new Set();
+    for (let a = 0; a < parts.length; a += 1) {
+      const pointsA = pointsOf(parts[a]);
+      const [ax, ay] = middleOf(parts[a].box);
+      // 自分自身が半回転で重なる形（線・円・四角・× など）は、対にしなくても同じ形になるので除く
+      if (paired.has(a) || pointsA.length < 12 || overlaps(pointsA, pointsA, ax, ay)) continue;
+      for (let b = a + 1; b < parts.length; b += 1) {
+        if (paired.has(b)) continue;
+        const [boxA, boxB] = [parts[a].box, parts[b].box];
+        if (Math.abs(boxA.maxX - boxA.minX - (boxB.maxX - boxB.minX)) > 0.1 || Math.abs(boxA.maxY - boxA.minY - (boxB.maxY - boxB.minY)) > 0.1) continue;
+        const [bx, by] = middleOf(boxB);
+        const [cx, cy] = [(ax + bx) / 2, (ay + by) / 2];
+        const pointsB = pointsOf(parts[b]);
+        if (!overlaps(pointsA, pointsB, cx, cy) || !overlaps(pointsB, pointsA, cx, cy)) continue;
+        parts.rotPairs.push({ a, b, cx, cy });
+        paired.add(a).add(b);
+        break;
+      }
+    }
+    // 平行にずらすともう片方に重なる部品の組を控える（layers の 2 段目と 3 段目など）。
+    // 別々に寄せると、同じ形なのに点の並びが変わる。a を基準に、b は a の寄せ方をそのままずらして使う
+    parts.shiftPairs = [];
+    const shifted = new Set(parts.rotPairs.flatMap((pair) => [pair.a, pair.b]));
+    for (let a = 0; a < parts.length; a += 1) {
+      const pointsA = pointsOf(parts[a]);
+      if (shifted.has(a) || pointsA.length < 12) continue;
+      for (let b = a + 1; b < parts.length; b += 1) {
+        if (shifted.has(b) || parts[b].polys.length !== parts[a].polys.length) continue;
+        const [boxA, boxB] = [parts[a].box, parts[b].box];
+        if (Math.abs(boxA.maxX - boxA.minX - (boxB.maxX - boxB.minX)) > 0.1 || Math.abs(boxA.maxY - boxA.minY - (boxB.maxY - boxB.minY)) > 0.1) continue;
+        const move = [boxB.minX - boxA.minX, boxB.minY - boxA.minY];
+        const pointsB = pointsOf(parts[b]);
+        const lands = (from, to, sign) =>
+          from.every((point, index) => index % 4 !== 0 || to.some((other) => Math.abs(other[0] - point[0] - sign * move[0]) < 0.2 && Math.abs(other[1] - point[1] - sign * move[1]) < 0.2));
+        if (!lands(pointsA, pointsB, 1) || !lands(pointsB, pointsA, -1)) continue;
+        parts.shiftPairs.push({ a, b, move });
+        shifted.add(b);
+      }
+    }
+    // 小さな点（サイコロの目など）が、どの部品の中にあるかを控える。いちばん小さい入れ物を選ぶ
+    parts.containers = parts.map((child, childIndex) => {
+      if (Math.max(child.box.maxX - child.box.minX, child.box.maxY - child.box.minY) > 2.2) return null;
+      let found = null;
+      parts.forEach((owner, ownerIndex) => {
+        if (ownerIndex === childIndex) return;
+        owner.polys.forEach((poly, number) => {
+          const box = owner.polys.length === 1 ? owner.box : poly.box;
+          const holds = box.minX < child.box.minX - 0.3 && box.maxX > child.box.maxX + 0.3 && box.minY < child.box.minY - 0.3 && box.maxY > child.box.maxY + 0.3;
+          if (holds && (!found || diagonal(box) < diagonal(found.box))) found = { owner: ownerIndex, poly: number + 1, box };
+        });
+      });
+      return found;
+    });
+    // 円のまわりに、円から外へ伸びる短い線が 6 本以上ある形（ウイルスのトゲなど）を控える。
+    // そのまま点にすると、トゲが点 1 個分しかなく円に埋もれるので、円を小さくしてトゲを伸ばす
+    parts.spiky = null;
+    const everyPoly = parts.flatMap((part, partIndex) => part.polys.map((poly) => ({ poly, partIndex })));
+    const circleOf = (poly) => {
+      if (poly.isCircle) {
+        const r = (poly.box.maxX - poly.box.minX) / 2;
+        return { cx: poly.box.minX + r, cy: poly.box.minY + r, r, sweep: Math.PI * 2 };
+      }
+      if (poly.closed) return null;
+      const box = circleThrough(poly.points, 0.8);
+      if (!box) return null;
+      const r = (box.maxX - box.minX) / 2;
+      let length = 0;
+      for (let index = 1; index < poly.points.length; index += 1) {
+        length += Math.hypot(poly.points[index][0] - poly.points[index - 1][0], poly.points[index][1] - poly.points[index - 1][1]);
+      }
+      return { cx: box.minX + r, cy: box.minY + r, r, sweep: length / r };
+    };
+    const circles = everyPoly.map((entry) => ({ ...entry, circle: circleOf(entry.poly) })).filter((entry) => entry.circle);
+    for (const seed of circles) {
+      const { cx, cy, r } = seed.circle;
+      // 同じ円の上にある弧を集める。合わせて半円以上あれば「輪」とみなす
+      const ring = circles.filter(({ circle }) => Math.abs(circle.cx - cx) < 0.2 && Math.abs(circle.cy - cy) < 0.2 && Math.abs(circle.r - r) < 0.2);
+      if (r < 4 || ring.reduce((sum, { circle }) => sum + circle.sweep, 0) < Math.PI) continue;
+      const ringPolys = new Set(ring.map(({ poly }) => poly));
+      // 輪以外の短い線を、触れ合っているものどうしでまとめる（トゲの軸と先の横棒など）
+      const shorts = everyPoly.map(({ poly }) => poly).filter((poly) => !ringPolys.has(poly) && Math.max(poly.box.maxX - poly.box.minX, poly.box.maxY - poly.box.minY) <= 4.5);
+      const clusters = [];
+      for (const poly of shorts) {
+        const joined = clusters.filter((cluster) => cluster.some((other) => touches(poly, other)));
+        const merged = [poly, ...joined.flat()];
+        for (const cluster of joined) clusters.splice(clusters.indexOf(cluster), 1);
+        clusters.push(merged);
+      }
+      const spikes = clusters.filter((cluster) => {
+        const distances = cluster.flatMap((poly) => poly.points).map((point) => Math.hypot(point[0] - cx, point[1] - cy));
+        const near = Math.min(...distances);
+        const far = Math.max(...distances);
+        return near >= r - 0.5 && near <= r + 0.9 && far >= r + 1.2 && far - near <= 4;
+      });
+      if (spikes.length >= 6) {
+        parts.spiky = { cx, cy, r, part: ring[0].partIndex, ring: ringPolys, spikes: new Set(spikes.flat()) };
+        break;
+      }
+    }
+    flatCache.set(cacheKey, parts);
+    return parts;
+  };
+
+  // いちばん近い「offset + step の倍数」を返す。ちょうど中間のときは枠の中心（12）に近いほうを選ぶ。
+  // 四捨五入だと中間の値がいつも右・下に寄り、左右対称のアイコンが対称でなくなる。
+  const nearestStep = (value, step, offset = 0) => {
+    const lower = Math.floor((value - offset) / step + 1e-9) * step + offset;
+    const upper = lower + step;
+    if (Math.abs(value - lower - (upper - value)) < 1e-6) return Math.abs(lower - BOX / 2) <= Math.abs(upper - BOX / 2) ? lower : upper;
+    return value - lower < upper - value ? lower : upper;
+  };
+  // 大きさが点の間隔の偶数倍なら中心を点の上に、奇数倍なら点と点の間に置く（左右を入れ替えても同じ結果になる決め方）
+  const snapMin = (center, size, pitch) => nearestStep(center, pitch, (Math.round(size / pitch) % 2) * (pitch / 2)) - size / 2;
+  const isCentered = (min, max) => Math.abs((min + max) / 2 - BOX / 2) < 0.05;
+  const sizeError = (min, max, candidate, pitch) => {
+    const center = (min + max) / 2;
+    return Math.abs(candidate - (max - min)) + 2 * Math.abs(snapMin(center, candidate, pitch) + candidate / 2 - center);
+  };
+  // centered: 枠の中心にある部品。点は 15 個（奇数）で中央の列があるので、偶数倍の大きさにして中心を中央の列に置く
+  const sizeCandidates = (size, pitch, centered = false) => {
+    if (size < 1e-6) return [0];
+    const step = centered ? pitch * 2 : pitch;
+    const limit = Math.floor((BOX - 2 * pitch) / step + 1e-6) * step;
+    return [...new Set([Math.floor(size / step) * step, Math.ceil(size / step) * step].map((candidate) => Math.min(candidate, limit)))];
+  };
+  // even: [横, 縦]。true の軸は大きさを点の間隔の偶数倍にする（真ん中に線がある部品。奇数倍だと線が真ん中に来ない）
+  const centerRuns = (part) =>
+    [0, 1].map((axis) => {
+      const middle = axis === 0 ? (part.box.minX + part.box.maxX) / 2 : (part.box.minY + part.box.maxY) / 2;
+      const size = axis === 0 ? part.box.maxX - part.box.minX : part.box.maxY - part.box.minY;
+      if (size <= 0.3) return false;
+      if (part.runs[axis].some((run) => !run.soft && Math.abs(run.pos - middle) < 0.05)) return true;
+      // 斜めの線の端が真ん中にある形（「<」の先、三角の先、ひし形の頂点）。偶数個だと先が 2 点に割れる
+      return part.polys.some((poly) => {
+        const ends = (poly.diagonals ?? []).flatMap(({ start, end }) => [start, end]);
+        return ends.some((index) => ends.filter((other) => other === index).length > 1 && Math.abs(poly.points[index][axis] - middle) < 0.05);
+      });
+    });
+  const pickSizes = (box, pitch, even = [false, false]) => {
+    const width = box.maxX - box.minX;
+    const height = box.maxY - box.minY;
+    const best = (candidates, score) => candidates.reduce((a, b) => (score(b) < score(a) ? b : a));
+    if (Math.abs(width - height) < 0.05 && width > 1e-6) {
+      // 縦横が同じ大きさの形（円など）は、縦横で同じ大きさに寄せて楕円にしない
+      const size = best(
+        sizeCandidates(width, pitch, isCentered(box.minX, box.maxX) || isCentered(box.minY, box.maxY) || even[0] || even[1]),
+        (candidate) => sizeError(box.minX, box.maxX, candidate, pitch) + sizeError(box.minY, box.maxY, candidate, pitch),
+      );
+      return [size, size];
+    }
+    return [
+      best(sizeCandidates(width, pitch, isCentered(box.minX, box.maxX) || even[0]), (candidate) => sizeError(box.minX, box.maxX, candidate, pitch)),
+      best(sizeCandidates(height, pitch, isCentered(box.minY, box.maxY) || even[1]), (candidate) => sizeError(box.minY, box.maxY, candidate, pitch)),
+    ];
+  };
+
+  // 部品の両端と、中にある縦線・横線を点の位置へ寄せ、その間はなめらかに伸び縮みさせる対応を作る
+  const clampMin = (min, size, pitch) =>
+    Math.min(Math.max(min, pitch), Math.floor(Math.max(pitch, BOX - pitch - size) / pitch + 1e-6) * pitch);
+
+  // 部品ごとの「寄せたあとの大きさと位置」を決める。
+  // 円の中の ＋ のように中心が重なっている部品は、ばらばらに寄せると中心が半点ずれるので、同じ中心にそろえて決める。
+  const planParts = (parts, pitch) => {
+    const low = (box, axis) => (axis === 0 ? box.minX : box.minY);
+    const high = (box, axis) => (axis === 0 ? box.maxX : box.maxY);
+    const middle = (box, axis) => (low(box, axis) + high(box, axis)) / 2;
+    const plan = parts.map((part) => {
+      const even = centerRuns(part);
+      const sizes = pickSizes(part.box, pitch, even);
+      return [0, 1].map((axis) => ({
+        even: even[axis],
+        size: sizes[axis],
+        min: clampMin(snapMin(middle(part.box, axis), sizes[axis], pitch), sizes[axis], pitch),
+        group: null,
+        series: false,
+      }));
+    });
+    const applyGroup = (group) => {
+      group.members.forEach((index, at) => {
+        const choice = group.byParity[group.odd].choices[at];
+        plan[index][group.axis] = { ...plan[index][group.axis], size: choice.size, min: choice.min, group, series: false };
+      });
+    };
+    const inside = (outer, inner) =>
+      inner.minX >= outer.minX - 0.5 && inner.maxX <= outer.maxX + 0.5 && inner.minY >= outer.minY - 0.5 && inner.maxY <= outer.maxY + 0.5;
+    for (const axis of [0, 1]) {
+      const parent = parts.map((_, index) => index);
+      const find = (index) => (parent[index] === index ? index : (parent[index] = find(parent[index])));
+      for (let i = 0; i < parts.length; i += 1) {
+        for (let j = i + 1; j < parts.length; j += 1) {
+          const [a, b] = [parts[i].box, parts[j].box];
+          if (Math.abs(middle(a, axis) - middle(b, axis)) < 0.3 && (inside(a, b) || inside(b, a))) parent[find(i)] = find(j);
+        }
+      }
+      const groups = new Map();
+      parts.forEach((_, index) => groups.set(find(index), [...(groups.get(find(index)) ?? []), index]));
+      for (const members of groups.values()) {
+        if (members.length < 2) continue;
+        const widest = members.reduce((a, b) => (high(parts[b].box, axis) - low(parts[b].box, axis) > high(parts[a].box, axis) - low(parts[a].box, axis) ? b : a));
+        const widestMiddle = middle(parts[widest].box, axis);
+        const start = Math.round(nearestStep(widestMiddle, pitch / 2) / (pitch / 2));
+        const offsets = Math.abs(widestMiddle - BOX / 2) < 0.05 ? [0] : [0, -1, 1];
+        // 中心を点の上に置く場合（偶数）と点と点の間に置く場合（奇数）の両方で、いちばんずれの少ない寄せ方を控えておく
+        const byParity = [null, null];
+        for (const offset of offsets) {
+          const center = ((start + offset) * pitch) / 2;
+          const odd = Math.abs(start + offset) % 2;
+          const choices = members.map((index) => {
+            const size = high(parts[index].box, axis) - low(parts[index].box, axis);
+            const own = middle(parts[index].box, axis);
+            if (size < 0.3) {
+              if (odd === 0) return { size: 0, min: center, cost: 2 * Math.abs(center - own) };
+              const fallback = nearestStep(own, pitch);
+              return { size: 0, min: fallback, cost: 2 * Math.abs(fallback - own) + pitch };
+            }
+            const preset = plan[index][axis];
+            if (preset.even && odd === 1) {
+              // 真ん中に線がある部品は奇数倍にできないので、単独で寄せた位置のままにする
+              return { size: preset.size, min: preset.min, cost: Math.abs(preset.size - size) + 2 * Math.abs(preset.min + preset.size / 2 - own) + pitch };
+            }
+            let count = Math.round(size / pitch);
+            if (count % 2 !== odd) count += size / pitch > count ? 1 : -1;
+            if (count < 0) count = 1;
+            const snapped = count * pitch;
+            const min = center - snapped / 2;
+            const outside = min < pitch - 1e-6 || min + snapped > BOX - pitch + 1e-6;
+            return { size: snapped, min, cost: Math.abs(snapped - size) + 2 * Math.abs(center - own) + (outside ? 100 : 0) };
+          });
+          const cost = choices.reduce((sum, choice) => sum + choice.cost, 0);
+          const held = byParity[odd];
+          const closer = held && Math.abs(cost - held.cost) < 1e-9 && Math.abs(center - BOX / 2) < Math.abs(held.center - BOX / 2) - 1e-9;
+          if (!held || cost < held.cost - 1e-9 || closer) byParity[odd] = { cost, choices, center };
+        }
+        const startOdd = Math.abs(start) % 2;
+        const other = byParity[1 - startOdd];
+        applyGroup({ axis, members, byParity, odd: other && other.cost < byParity[startOdd].cost - 1e-9 ? 1 - startOdd : startOdd });
+      }
+    }
+
+    // 同じ大きさの部品が等間隔に 3 つ以上並んでいるときは、間隔を点の間隔の倍数にそろえて等間隔のまま寄せる。
+    // 1 つずつ寄せると、間隔が 3 点・3 点・4 点のように不ぞろいになる。
+    for (const axis of [0, 1]) {
+      const buckets = new Map();
+      parts.forEach((part, index) => {
+        const key = Math.round((high(part.box, axis) - low(part.box, axis)) * 10);
+        buckets.set(key, [...(buckets.get(key) ?? []), index]);
+      });
+      for (const indexes of buckets.values()) {
+        const clusters = [];
+        for (const index of [...indexes].sort((a, b) => middle(parts[a].box, axis) - middle(parts[b].box, axis))) {
+          const center = middle(parts[index].box, axis);
+          const last = clusters[clusters.length - 1];
+          if (last && center - last.center < 0.1) last.members.push(index);
+          else clusters.push({ center, members: [index] });
+        }
+        let from = 0;
+        while (from < clusters.length - 2) {
+          const gap = clusters[from + 1].center - clusters[from].center;
+          let to = from + 1;
+          while (to + 1 < clusters.length && Math.abs(clusters[to + 1].center - clusters[to].center - gap) < 0.1) to += 1;
+          if (to - from < 2 || gap < 0.5) {
+            from += 1;
+            continue;
+          }
+          const first = clusters[from].members[0];
+          const original = high(parts[first].box, axis) - low(parts[first].box, axis);
+          let size = original < 0.3 ? 0 : Math.max(pitch, Math.round(original / pitch) * pitch);
+          let spacing = Math.max(pitch, Math.round(gap / pitch) * pitch);
+          if (gap - original > 0.5 * pitch) spacing = Math.max(spacing, size + pitch);
+          const steps = to - from;
+          while (spacing * steps + size > BOX - 2 * pitch + 1e-6 && spacing > pitch) spacing -= pitch;
+          const mid = (clusters[from].center + clusters[to].center) / 2;
+          if (Math.abs(mid - BOX / 2) < 0.05 && Math.round((spacing * steps + size) / pitch) % 2 === 1) {
+            // 並び全体が枠の中心にあるときは、全体の幅を偶数倍にして中央の列に合わせる（奇数倍だと半点ずれて対称にならない）
+            const fits = (space, width) =>
+              space >= pitch && space * steps + width <= BOX - 2 * pitch + 1e-6 && (gap - original <= 0.5 * pitch || space >= width + pitch);
+            if (steps % 2 === 1) {
+              const options = gap > spacing ? [spacing + pitch, spacing - pitch] : [spacing - pitch, spacing + pitch];
+              spacing = options.find((space) => fits(space, size)) ?? spacing;
+            } else {
+              const options = original > size ? [size + pitch, size - pitch] : [size - pitch, size + pitch];
+              size = options.find((width) => width >= 0 && fits(spacing, width)) ?? size;
+            }
+          }
+          const firstMin = clampMin(snapMin(mid, spacing * steps + size, pitch), spacing * steps + size, pitch);
+          for (let at = from; at <= to; at += 1) {
+            for (const index of clusters[at].members) {
+              plan[index][axis] = { size, min: firstMin + (at - from) * spacing, group: null, series: true };
+            }
+          }
+          from = to;
+        }
+      }
+    }
+
+    // 縦横が同じ大きさの形（円など）は、中心合わせで縦と横の大きさが食い違ったら同じ大きさに直す
+    parts.forEach((part, index) => {
+      const width = part.box.maxX - part.box.minX;
+      if (width < 0.3 || Math.abs(width - (part.box.maxY - part.box.minY)) > 0.05) return;
+      const [x, y] = plan[index];
+      if (x.size === y.size) return;
+      if (x.group && y.group) {
+        const extra = (group) => (group.byParity[1 - group.odd] ? group.byParity[1 - group.odd].cost - group.byParity[group.odd].cost : Infinity);
+        const target = extra(x.group) <= extra(y.group) ? x.group : y.group;
+        if (extra(target) === Infinity) return;
+        target.odd = 1 - target.odd;
+        applyGroup(target);
+        return;
+      }
+      const fixedX = Boolean(x.group) || x.series;
+      const fixedY = Boolean(y.group) || y.series;
+      if (fixedX === fixedY) return;
+      const axis = fixedX ? 1 : 0;
+      const size = plan[index][1 - axis].size;
+      plan[index][axis] = { size, min: clampMin(snapMin(middle(part.box, axis), size, pitch), size, pitch), group: null, series: false };
+    });
+    return plan;
+  };
+
+  const fitAxis = (min, max, runs, pitch, snapped, newMin, constraints = []) => {
+    const size = max - min;
+    const anchors = [{ from: min, to: newMin }];
+    if (size > 1e-6) anchors.push({ from: max, to: newMin + snapped });
+    const scale = size > 1e-6 ? snapped / size : 1;
+    // 同じくらいの長さの線が等間隔に 3 本以上並んでいるときは、間隔を点の間隔の倍数にそろえて等間隔のまま寄せる
+    const spaced = new Set();
+    const ordered = runs.filter((run) => !run.soft).sort((a, b) => a.pos - b.pos);
+    for (let from = 0; from < ordered.length - 2; ) {
+      const gap = ordered[from + 1].pos - ordered[from].pos;
+      let to = from + 1;
+      while (to + 1 < ordered.length && Math.abs(ordered[to + 1].pos - ordered[to].pos - gap) < 0.1) to += 1;
+      const members = ordered.slice(from, to + 1);
+      const weights = members.map((member) => member.weight);
+      if (to - from < 2 || gap < 0.7 * pitch || Math.min(...weights) < 0.8 * Math.max(...weights)) {
+        from += 1;
+        continue;
+      }
+      const steps = to - from;
+      const firstEdge = members[0].pos - min < 0.05;
+      const lastEdge = max - members[steps].pos < 0.05;
+      let spacing = Math.max(pitch, Math.round((gap * scale) / pitch) * pitch);
+      let first = null;
+      if (firstEdge && lastEdge) {
+        spacing = snapped / steps;
+        if (Math.abs(spacing / pitch - Math.round(spacing / pitch)) < 1e-6) first = newMin;
+      } else {
+        while (spacing * steps > snapped + 1e-6 && spacing > pitch) spacing -= pitch;
+        const span = spacing * steps;
+        if (span <= snapped + 1e-6) {
+          if (firstEdge) first = newMin;
+          else if (lastEdge) first = newMin + snapped - span;
+          else {
+            const mid = newMin + ((members[0].pos + members[steps].pos) / 2 - min) * scale;
+            first = nearestStep(mid, pitch, (Math.round(span / pitch) % 2) * (pitch / 2)) - span / 2;
+            first = Math.min(Math.max(first, newMin), newMin + snapped - span);
+            // 並びが部品の真ん中にあるのに、点の数の偶数・奇数が合わず真ん中に置けないときは、そろえるのをやめる（左右が非対称になる）
+            const centered = Math.abs(mid - (newMin + snapped / 2)) < 0.1;
+            if (centered && Math.round(span / pitch) % 2 !== Math.round(snapped / pitch) % 2) first = null;
+          }
+        }
+      }
+      if (first !== null) {
+        members.forEach((member, index) => {
+          spaced.add(member);
+          const edge = (index === 0 && firstEdge) || (index === steps && lastEdge);
+          if (!edge) anchors.push({ from: member.pos, to: first + index * spacing });
+        });
+      }
+      from = to;
+    }
+    for (const run of runs) {
+      if (spaced.has(run)) continue;
+      if (run.pos - min < 0.05 || max - run.pos < 0.05) continue;
+      const ideal = newMin + (run.pos - min) * scale;
+      const base = nearestStep(ideal, pitch);
+      const candidates = [base, base - pitch, base + pitch].sort(
+        (a, b) => Math.abs(a - ideal) - Math.abs(b - ideal) || Math.abs(a - BOX / 2) - Math.abs(b - BOX / 2),
+      );
+      // constraints: 「a の線と b の線の間隔を、点の間隔の偶数倍（odd 0）か奇数倍（odd 1）にする」という指定
+      const parityOk = (candidate) =>
+        constraints.every((constraint) => {
+          const otherPos = Math.abs(constraint.a - run.pos) < 0.05 ? constraint.b : Math.abs(constraint.b - run.pos) < 0.05 ? constraint.a : null;
+          if (otherPos === null) return true;
+          const other = anchors.find((anchor) => Math.abs(anchor.from - otherPos) < 0.05);
+          return !other || Math.abs(Math.round((candidate - other.to) / pitch)) % 2 === constraint.odd;
+        });
+      const chosen = candidates.find((candidate) =>
+        parityOk(candidate) &&
+        anchors.every((anchor) => {
+          const gap = run.pos - anchor.from;
+          const newGap = (candidate - anchor.to) * Math.sign(gap);
+          return Math.abs(gap) >= 0.7 * pitch ? newGap >= pitch - 1e-6 : newGap >= -1e-6;
+        }),
+      );
+      if (chosen !== undefined) anchors.push({ from: run.pos, to: chosen });
+    }
+    anchors.sort((a, b) => a.from - b.from);
+    return (value) => {
+      let index = 1;
+      while (index < anchors.length - 1 && value > anchors[index].from) index += 1;
+      const low = anchors[index - 1];
+      const high = anchors[index] ?? low;
+      if (high.from - low.from < 1e-6) return low.to;
+      return low.to + ((value - low.from) / (high.from - low.from)) * (high.to - low.to);
+    };
+  };
+
+  // 壁にはさまれた部品を、寄せたあとの壁と壁の真ん中に置き直す。
+  // 真ん中が点の上か点と点の間かで、置ける大きさ（点の数の偶数・奇数）が決まる。合わないときは
+  // (1) 壁を 1 点ずらして合わせる (2) 部品の大きさを 1 点変える の順で試し、どちらもできなければそのままにする。
+  const centerInCavities = (parts, plan, constraints, fitFor, pitch) => {
+    const low = (box, axis) => (axis === 0 ? box.minX : box.minY);
+    const high = (box, axis) => (axis === 0 ? box.maxX : box.maxY);
+    const diagonal = (box) => Math.hypot(box.maxX - box.minX, box.maxY - box.minY);
+    const onLattice = (value) => Math.abs(value / pitch - Math.round(value / pitch)) < 1e-6;
+    const order = [...parts.rels].sort((a, b) => diagonal(parts[b.child].box) - diagonal(parts[a.child].box));
+    for (const rel of order) {
+      const { axis, child } = rel;
+      const entry = plan[child][axis];
+      if (entry.group || entry.series) continue;
+      const box = parts[child].box;
+      const original = high(box, axis) - low(box, axis);
+      const wallsOf = (target) => [fitFor(target.before.owner, target.axis)(target.before.pos), fitFor(target.after.owner, target.axis)(target.after.pos)];
+      const walls = () => wallsOf(rel);
+      const place = ([from, to], count) => {
+        const min = nearestStep((from + to) / 2, pitch / 2) - (count * pitch) / 2;
+        return onLattice(min) ? min : null;
+      };
+      let count = original < 0.3 ? 0 : Math.round(entry.size / pitch);
+      let min = place(walls(), count);
+      if (min === null && rel.before.owner === rel.after.owner) {
+        const owner = parts[rel.before.owner];
+        const ownerLow = low(owner.box, axis);
+        const ownerHigh = high(owner.box, axis);
+        const isEdge = (pos) => Math.abs(pos - ownerLow) < 0.05 || Math.abs(pos - ownerHigh) < 0.05;
+        const isRun = (pos) => owner.runs[axis].some((run) => !run.soft && Math.abs(run.pos - pos) < 0.05);
+        const movable = (pos) => isRun(pos) && !isEdge(pos);
+        const anchored = (pos) => isRun(pos) || isEdge(pos);
+        // 壁が外枠の中心に対して左右（上下）対称のときは、片方だけ動かすと形が非対称になるので動かさない
+        const symmetric = Math.abs((rel.before.pos + rel.after.pos) / 2 - (ownerLow + ownerHigh) / 2) < 0.1;
+        if (!symmetric && anchored(rel.before.pos) && anchored(rel.after.pos) && (movable(rel.before.pos) || movable(rel.after.pos))) {
+          const [from, to] = walls();
+          const constraint = { a: rel.before.pos, b: rel.after.pos, odd: (Math.round((to - from) / pitch) + 1) % 2 };
+          constraints[rel.before.owner][axis].push(constraint);
+          const moved = walls();
+          const steps = (moved[1] - moved[0]) / pitch;
+          if (steps >= 2 && Math.abs(steps - Math.round(steps)) < 1e-6 && Math.round(steps) % 2 === constraint.odd) min = place(moved, count);
+          if (min === null) constraints[rel.before.owner][axis].pop();
+        }
+      }
+      if (min === null && count > 0) {
+        const other = plan[child][1 - axis];
+        const square = Math.abs(original - (high(box, 1 - axis) - low(box, 1 - axis))) < 0.05;
+        const otherRel = parts.rels.find((r) => r.child === child && r.axis === 1 - axis);
+        const otherLocked = Boolean(other.group) || other.series;
+        if (!square || !otherLocked) {
+          const step = entry.even || (square && other.even) ? 2 : 1;
+          const changed = original / pitch > count || count - step < 1 ? count + step : count - step;
+          const placed = place(walls(), changed);
+          // 縦横が同じ大きさの部品は、もう片方の軸も同じ大きさで真ん中に置けるときだけ変える
+          const size = changed * pitch;
+          const center = (low(box, 1 - axis) + high(box, 1 - axis)) / 2;
+          const otherMin = !square ? null : otherRel ? place(wallsOf(otherRel), changed) : clampMin(snapMin(center, size, pitch), size, pitch);
+          const inFrame = (value) => value !== null && value >= pitch - 1e-6 && value + size <= BOX - pitch + 1e-6;
+          if (inFrame(placed) && (!square || inFrame(otherMin))) {
+            count = changed;
+            min = placed;
+            if (square) plan[child][1 - axis] = { ...other, size, min: otherMin, group: null, series: false };
+          }
+        }
+      }
+      if (min === null || min < pitch - 1e-6 || min + count * pitch > BOX - pitch + 1e-6) continue;
+      plan[child][axis] = { ...plan[child][axis], size: count * pitch, min, group: null, series: false };
+    }
+  };
+
+  const fitPlan = (name) => {
+    const { pitch } = state;
+    const parts = flatten(name);
+    const plan = planParts(parts, pitch);
+    const constraints = parts.map(() => [[], []]);
+    // polyNumber: 線の番号（1 始まり）。その線自身の端の位置合わせだけを使う。0 なら縦線・横線だけで寄せる。
+    // ほかの線の端まで使うと、その線の内側（仮面の目の位置など）が偏る
+    const ownFit = (index, axis, polyNumber = 0) => {
+      const { box } = parts[index];
+      const entry = plan[index][axis];
+      const runs = parts[index].runs[axis].filter((run) => !run.soft || run.soft === polyNumber);
+      return fitAxis(axis === 0 ? box.minX : box.minY, axis === 0 ? box.maxX : box.maxY, runs, pitch, entry.size, entry.min, constraints[index][axis]);
+    };
+    const rotated = new Map(parts.rotPairs.map((pair) => [pair.b, pair]));
+    const moved = new Map(parts.shiftPairs.map((pair) => [pair.b, pair]));
+    const fitFor = (index, axis, polyNumber = 0) => {
+      const copy = moved.get(index);
+      if (copy && plan[copy.a][axis].size === plan[index][axis].size) {
+        // 同じ形の部品は、基準の部品の寄せ方を、点の間隔の倍数だけずらして使う
+        const fit = ownFit(copy.a, axis, polyNumber);
+        const offset = plan[index][axis].min - plan[copy.a][axis].min;
+        return (value) => fit(value - copy.move[axis]) + offset;
+      }
+      const pair = rotated.get(index);
+      if (!pair) return ownFit(index, axis, polyNumber);
+      // 半回転の対の片方（b）は、もう片方（a）の寄せ方を、寄せたあとの中心で半回転して使う
+      const base = plan[pair.a][axis];
+      const own = plan[index][axis];
+      const center = nearestStep((base.min + base.size / 2 + own.min + own.size / 2) / 2, pitch / 2);
+      if (2 * center - (base.min + base.size) < pitch - 1e-6 || 2 * center - base.min > BOX - pitch + 1e-6) return ownFit(index, axis);
+      const fit = ownFit(pair.a, axis);
+      const original = axis === 0 ? pair.cx : pair.cy;
+      return (value) => 2 * center - fit(2 * original - value);
+    };
+    if (state.cavity) centerInCavities(parts, plan, constraints, fitFor, pitch);
+    // 入れ物の中の小さな点は、入れ物の伸び縮みに合わせて動かしてから、いちばん近い点に置く。
+    // 点だけを別に寄せると、入れ物の中での位置（サイコロの目の並びなど）が偏る。
+    parts.containers.forEach((holder, child) => {
+      if (!holder) return;
+      for (const axis of [0, 1]) {
+        const entry = plan[child][axis];
+        if (entry.group || entry.series || parts.rels.some((rel) => rel.child === child && rel.axis === axis)) continue;
+        const { box } = parts[child];
+        const center = axis === 0 ? (box.minX + box.maxX) / 2 : (box.minY + box.maxY) / 2;
+        // 入れ物の両端が寄せられた先を求め、その間での割合を保って置く
+        const [low, high] = axis === 0 ? [holder.box.minX, holder.box.maxX] : [holder.box.minY, holder.box.maxY];
+        const fit = fitFor(holder.owner, axis, holder.poly);
+        const moved = fit(low) + ((center - low) / (high - low)) * (fit(high) - fit(low));
+        plan[child][axis] = { ...entry, min: clampMin(snapMin(moved, entry.size, pitch), entry.size, pitch) };
+      }
+    });
+    // 元の形で同じ大きさの部品（左右のタイヤなど）は、寄せたあとも同じ大きさにそろえる。
+    // 多いほうの大きさに合わせ、同数なら元の大きさに近いほうに合わせる。
+    for (const members of sameSizeGroups(parts)) {
+      const sizeOf = (index) => [plan[index][0].size, plan[index][1].size];
+      const tally = new Map();
+      for (const index of members) {
+        const key = sizeOf(index).join("|");
+        tally.set(key, { sizes: sizeOf(index), count: (tally.get(key)?.count ?? 0) + 1 });
+      }
+      if (tally.size < 2) continue;
+      const { box } = parts[members[0]];
+      const error = (sizes) => Math.abs(sizes[0] - (box.maxX - box.minX)) + Math.abs(sizes[1] - (box.maxY - box.minY));
+      const chosen = [...tally.values()].reduce((a, b) => (b.count > a.count || (b.count === a.count && error(b.sizes) < error(a.sizes)) ? b : a)).sizes;
+      for (const index of members) {
+        for (const axis of [0, 1]) {
+          const entry = plan[index][axis];
+          if (entry.size === chosen[axis]) continue;
+          const own = parts[index].box;
+          const center = axis === 0 ? (own.minX + own.maxX) / 2 : (own.minY + own.maxY) / 2;
+          const kept = entry.min + entry.size / 2;
+          // 今の中心のまま置けるならそのまま、置けなければ元の位置からいちばん近い所に置く
+          const stay = kept - chosen[axis] / 2;
+          const min = Math.abs(stay / pitch - Math.round(stay / pitch)) < 1e-6 ? stay : snapMin(center, chosen[axis], pitch);
+          plan[index][axis] = { ...entry, size: chosen[axis], min: clampMin(min, chosen[axis], pitch), group: null, series: false };
+        }
+      }
+    }
+    // 元の形で端がそろっている横並び（縦並び）の部品は、寄せたあとも端をそろえる（A と B の底など）。
+    // いちばん大きい部品の端に、ほかの部品をずらして合わせる。大きさは変えない。
+    const extent = (box, axis) => (axis === 0 ? [box.minX, box.maxX] : [box.minY, box.maxY]);
+    const span = (box) => Math.hypot(box.maxX - box.minX, box.maxY - box.minY);
+    for (const axis of [0, 1]) {
+      for (const side of [0, 1]) {
+        const groups = new Map();
+        parts.forEach((part, index) => {
+          if (span(part.box) < 2) return;
+          const key = Math.round(extent(part.box, axis)[side] * 10);
+          groups.set(key, [...(groups.get(key) ?? []), index]);
+        });
+        for (const members of groups.values()) {
+          if (members.length < 2) continue;
+          const lead = members.reduce((a, b) => (span(parts[b].box) > span(parts[a].box) ? b : a));
+          const edgeOf = (index) => plan[index][axis].min + (side === 1 ? plan[index][axis].size : 0);
+          const [leadLow, leadHigh] = extent(parts[lead].box, 1 - axis);
+          for (const index of members) {
+            const entry = plan[index][axis];
+            const [low, high] = extent(parts[index].box, 1 - axis);
+            const beside = high < leadLow - 0.3 || low > leadHigh + 0.3;
+            const shift = edgeOf(lead) - edgeOf(index);
+            if (index === lead || !beside || entry.group || entry.series || Math.abs(shift) < 1e-6) continue;
+            const min = entry.min + shift;
+            if (min < pitch - 1e-6 || min + entry.size > BOX - pitch + 1e-6) continue;
+            plan[index][axis] = { ...entry, min };
+          }
+        }
+      }
+    }
+    return { parts, plan, fitFor };
+  };
+  const fittedPolys = (name) => {
+    const { parts, fitFor } = fitPlan(name);
+    const { pitch } = state;
+    // トゲのある輪は、直径を点 2 個分小さくして、トゲを伸ばす余白を作る。輪もトゲも、輪の中心からの向きを保って置き直す
+    let spiky = null;
+    if (parts.spiky) {
+      const { cx, cy, r, part } = parts.spiky;
+      const fits = [fitFor(part, 0), fitFor(part, 1)];
+      const fitted = Math.round((fits[0](cx + r) - fits[0](cx - r)) / pitch) * pitch;
+      const size = Math.max(4 * pitch, fitted - 2 * pitch);
+      const center = [cx, cy].map((value, axis) => snapMin(fits[axis](value), size, pitch) + size / 2);
+      spiky = { ...parts.spiky, center, radius: size / 2 };
+    }
+    const radial = (poly, place) => {
+      const points = poly.points.map((point) => {
+        const distance = Math.hypot(point[0] - spiky.cx, point[1] - spiky.cy);
+        const moved = place(distance);
+        return [spiky.center[0] + ((point[0] - spiky.cx) / distance) * moved, spiky.center[1] + ((point[1] - spiky.cy) / distance) * moved];
+      });
+      return { ...poly, source: poly.points, center: spiky.center, points };
+    };
+    return parts.flatMap((part, index) => {
+      const center = [fitFor(index, 0)((part.box.minX + part.box.maxX) / 2), fitFor(index, 1)((part.box.minY + part.box.maxY) / 2)];
+      return part.polys.map((poly, number) => {
+        if (spiky && spiky.ring.has(poly)) return radial(poly, (distance) => (distance / spiky.r) * spiky.radius);
+        if (spiky && spiky.spikes.has(poly)) {
+          // トゲは「輪から外へ 1 進むごとに点 1 個分」になるように伸ばす
+          const moved = radial(poly, (distance) => spiky.radius + (distance - spiky.r) * Math.max(1, pitch));
+          const last = moved.points.length - 1;
+          const slanted = Math.abs(moved.points[last][0] - moved.points[0][0]) > 0.3 && Math.abs(moved.points[last][1] - moved.points[0][1]) > 0.3;
+          return { ...moved, diagonals: slanted ? [{ start: 0, end: last }] : [] };
+        }
+        const fitX = fitFor(index, 0, number + 1);
+        const fitY = fitFor(index, 1, number + 1);
+        const circleFit = poly.isArc ? [fitX(poly.circleBox.minX), fitX(poly.circleBox.maxX), fitY(poly.circleBox.minY), fitY(poly.circleBox.maxY)] : null;
+        return { ...poly, source: poly.points, center, circleFit, points: poly.points.map((point) => [fitX(point[0]), fitY(point[1])]) };
+      });
+    });
+  };
+  // 元の形で同じ大きさ（縦横とも）の部品をまとめる。点のような小さすぎるものは除く
+  const sameSizeGroups = (parts) => {
+    const groups = new Map();
+    parts.forEach((part, index) => {
+      const width = part.box.maxX - part.box.minX;
+      const height = part.box.maxY - part.box.minY;
+      if (Math.max(width, height) < 0.3) return;
+      const key = `${Math.round(width * 10)}|${Math.round(height * 10)}|${part.polys.length}`;
+      groups.set(key, [...(groups.get(key) ?? []), index]);
+    });
+    return [...groups.values()].filter((members) => members.length > 1);
+  };
+  // 確認用: 元の形では同じ大きさなのに、寄せたあとの大きさが違う部品の組を数える
+  const sizeMismatch = (name) => {
+    const { parts, fitFor } = fitPlan(name);
+    const fitted = (index) => {
+      const { box } = parts[index];
+      const [fitX, fitY] = [fitFor(index, 0), fitFor(index, 1)];
+      return `${Math.abs(fitX(box.maxX) - fitX(box.minX)).toFixed(2)}|${Math.abs(fitY(box.maxY) - fitY(box.minY)).toFixed(2)}`;
+    };
+    return sameSizeGroups(parts).filter((members) => new Set(members.map(fitted)).size > 1).length;
+  };
+  // 確認用: 元の形では壁の真ん中にあるのに、寄せたあとに真ん中から外れている部品を数える
+  const offCenter = (name) => {
+    const { parts, plan, fitFor } = fitPlan(name);
+    return parts.rels.filter((rel) => {
+      const entry = plan[rel.child][rel.axis];
+      const middle = (fitFor(rel.before.owner, rel.axis)(rel.before.pos) + fitFor(rel.after.owner, rel.axis)(rel.after.pos)) / 2;
+      return Math.abs(entry.min + entry.size / 2 - middle) > 0.2;
+    }).length;
+  };
+  const drawPoly = ({ points, closed, fill }) => {
+    const [firstX, firstY] = points[0];
+    ctx.beginPath();
+    if (points.every(([x, y]) => Math.abs(x - firstX) < 0.02 && Math.abs(y - firstY) < 0.02)) {
+      ctx.arc(firstX, firstY, ctx.lineWidth / 2, 0, Math.PI * 2);
+      ctx.fill();
+      return;
+    }
+    ctx.moveTo(firstX, firstY);
+    for (let index = 1; index < points.length; index += 1) ctx.lineTo(points[index][0], points[index][1]);
+    if (closed) ctx.closePath();
+    if (fill) ctx.fill();
+    ctx.stroke();
+  };
+
+  // 元の線を描き、等間隔の点ごとに「まわりの升目に線が重なる割合」を返す
+  const lattice = () => {
+    const { pitch } = state;
+    const cells = [];
+    for (let y = pitch; y <= BOX - pitch + 0.001; y += pitch) {
+      for (let x = pitch; x <= BOX - pitch + 0.001; x += pitch) cells.push({ x, y, coverage: 0 });
+    }
+    return cells;
+  };
+  // draw で描いたものが、それぞれの点のまわりの升目にどれだけ重なるかを測り、これまでの値より大きければ置き換える
+  const measure = (cells, draw) => {
+    const { pitch, weight } = state;
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.setTransform(SCALE, 0, 0, SCALE, 0, 0);
+    ctx.lineWidth = weight;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    draw();
+    const { data, width } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const cellPx = Math.round(pitch * SCALE);
+    for (const cell of cells) {
+      const left = Math.round((cell.x - pitch / 2) * SCALE);
+      const top = Math.round((cell.y - pitch / 2) * SCALE);
+      let sum = 0;
+      for (let py = top; py < top + cellPx; py += 1) {
+        for (let px = left; px < left + cellPx; px += 1) sum += data[(py * width + px) * 4 + 3];
+      }
+      cell.coverage = Math.max(cell.coverage, sum / (255 * cellPx * cellPx));
+    }
+  };
+  const rasterize = (name) => {
+    const cells = lattice();
+    if (state.fit) {
+      // 線 1 本ごとに測る。まとめて測ると、線が交わる所で隣の点まで灯って形がつぶれる
+      const symmetry = originalSymmetry(name);
+      const { pitch } = state;
+      const perSide = Math.round(BOX / pitch) - 1;
+      let target = cells;
+      const light = (x, y) => {
+        const column = Math.round(x / pitch) - 1;
+        const row = Math.round(y / pitch) - 1;
+        if (column >= 0 && column < perSide && row >= 0 && row < perSide) target[row * perSide + column].coverage = 1;
+      };
+      // 斜めの線を重なりの割合で決めると、傾きによって 1 個の所と 2 個の所が混ざって太さが乱れる。
+      // 両端をいちばん近い点に合わせ、長いほうの向きに 1 列進むごとに点を 1 個だけ灯す。
+      // ちょうど中間のときは target（その形の中心）に近いほうへ寄せる。枠の中心へ寄せると、A の左右の脚のように
+      // 同じ形の中で向かい合う線が、同じ向きに寄って非対称になる
+      const toward = (value, target) => {
+        const lower = Math.floor(value / pitch + 1e-9) * pitch;
+        const upper = lower + pitch;
+        if (Math.abs(value - lower - (upper - value)) < 1e-6) return Math.abs(lower - target) <= Math.abs(upper - target) ? lower : upper;
+        return value - lower < upper - value ? lower : upper;
+      };
+      const lightLine = ([x0, y0], [x1, y1], center) => {
+        const count = Math.round(Math.max(Math.abs(x1 - x0), Math.abs(y1 - y0)) / pitch);
+        for (let step = 0; step <= count; step += 1) {
+          const ratio = count === 0 ? 0 : step / count;
+          light(toward(x0 + (x1 - x0) * ratio, center[0]), toward(y0 + (y1 - y0) * ratio, center[1]));
+        }
+      };
+      // 正円を重なりの割合で決めると、輪郭が斜めに進む段差の所で内側の点まで灯って角が太る（小さな円ほど四角い塊に見える）。
+      // 上下は 1 列ごと、左右は 1 行ごとに、円周にいちばん近い点を 1 個だけ灯す。
+      // bounds: 円の外枠 [左, 右, 上, 下]。省くと points から求める。arc: 円弧のときの点の並び（その近くの点だけ灯す）
+      const lightCircle = (points, bounds = null, arc = null) => {
+        const xs = points.map((point) => point[0]);
+        const ys = points.map((point) => point[1]);
+        const [minX, maxX, minY, maxY] = bounds ?? [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+        const onArc = (x, y) => !arc || arc.some((point) => Math.hypot(point[0] - x, point[1] - y) < pitch * 0.75);
+        const radius = (maxX - minX) / 2 / pitch;
+        const onLattice = (value) => Math.abs(value / pitch - Math.round(value / pitch)) < 1e-6;
+        if (Math.abs(maxX - minX - (maxY - minY)) > 1e-6 || radius < 2 || ![minX, maxX, minY, maxY].every(onLattice)) return false;
+        const [cx, cy] = [(minX + maxX) / 2, (minY + maxY) / 2];
+        for (let u = radius % 1; u <= radius + 1e-6; u += 1) {
+          const v = Math.sqrt(Math.max(0, radius * radius - u * u));
+          const snappedV = radius - Math.floor(radius - v + 0.5 - 1e-9);
+          if (u > snappedV + 1e-6) break;
+          for (const [a, b] of [[u, snappedV], [snappedV, u]]) {
+            for (const [signA, signB] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) {
+              const [x, y] = [cx + signA * a * pitch, cy + signB * b * pitch];
+              if (onArc(x, y)) light(x, y);
+            }
+          }
+        }
+        return true;
+      };
+      const drawDots = (poly) => {
+        const { points } = poly;
+        if (poly.isCircle && !poly.fill && lightCircle(points)) return;
+        // 円の一部が欠けた弧（＋ のために切れた顔の輪など）も、欠けていない円と同じ輪郭になるようにする
+        if (poly.circleFit && lightCircle(points, poly.circleFit, points)) return;
+        const lines = poly.diagonals.filter(
+          ({ start, end }) => Math.hypot(points[end][0] - points[start][0], points[end][1] - points[start][1]) >= 1.5 * pitch,
+        );
+        if (lines.length === 0) {
+          measure(target, () => drawPoly(poly));
+          return;
+        }
+        // まず斜めの線の両端を点に合わせる（snapped: points の番号 → 合わせた先）
+        const snapped = new Map();
+        const drawn = [];
+        let last = null;
+        const meets = (a, b) => Math.hypot(points[a][0] - points[b][0], points[a][1] - points[b][1]) < 0.25;
+        const inFrame = (point) => point.every((value) => value >= pitch - 1e-6 && value <= BOX - pitch + 1e-6);
+        lines.forEach(({ start, end }, at) => {
+          const joined = last && meets(start, last.index);
+          const joinsNext = at + 1 < lines.length && meets(end, lines[at + 1].start);
+          let from = joined ? last.point : [toward(points[start][0], poly.center[0]), toward(points[start][1], poly.center[1])];
+          let to = [toward(points[end][0], poly.center[0]), toward(points[end][1], poly.center[1])];
+          // 元の形で 45 度に近い線（傾きが 0.8〜1.25）は、横と縦に同じ点の数だけ進めて 45 度にする。
+          // 両端を別々に寄せると 45 度からずれて、線が途中で折れる（屋根の線など）
+          const sourceX = Math.abs(poly.source[end][0] - poly.source[start][0]);
+          const sourceY = Math.abs(poly.source[end][1] - poly.source[start][1]);
+          if (Math.abs(sourceX - sourceY) < 0.2 * Math.max(sourceX, sourceY)) {
+            const dx = points[end][0] - points[start][0];
+            const dy = points[end][1] - points[start][1];
+            const count = Math.max(1, Math.round((Math.abs(dx) + Math.abs(dy)) / 2 / pitch));
+            const step = [Math.sign(dx) * count * pitch, Math.sign(dy) * count * pitch];
+            // 終わりが次の斜めの線とつながる頂点（屋根のてっぺんなど）なら、頂点を動かさず、始まりの側を合わせる
+            const backward = [to[0] - step[0], to[1] - step[1]];
+            const forward = [from[0] + step[0], from[1] + step[1]];
+            if (!joined && joinsNext && inFrame(backward)) from = backward;
+            else if (inFrame(forward)) to = forward;
+          }
+          snapped.set(start, from);
+          snapped.set(end, to);
+          drawn.push([from, to]);
+          last = { index: end, point: to };
+        });
+        // 斜めの線の間に残った部分（曲線や縦横の線）は、両端が合わせた先の点につながるように少しずらして描く
+        const pieces = [];
+        let cursor = 0;
+        for (const { start, end } of lines) {
+          if (start > cursor) pieces.push([cursor, start]);
+          cursor = end;
+        }
+        if (cursor < points.length - 1) pieces.push([cursor, points.length - 1]);
+        for (const [first, final] of pieces) {
+          const closing = poly.closed && Math.hypot(points[points.length - 1][0] - points[0][0], points[points.length - 1][1] - points[0][1]) < 0.25;
+          const a = snapped.get(first) ?? (closing && first === 0 ? snapped.get(points.length - 1) : undefined);
+          const b = snapped.get(final) ?? (closing && final === points.length - 1 ? snapped.get(0) : undefined);
+          // ずらす量を、始まりの端のずれから終わりの端のずれへ、並びに沿ってなだらかに変える。
+          // 両端の間で伸び縮みさせる方法は使わないこと（両端の横位置が近い曲線が 1 本の線につぶれる）
+          const REACH = 3;
+          const along = [0];
+          for (let index = first + 1; index <= final; index += 1) {
+            along.push(along[along.length - 1] + Math.hypot(points[index][0] - points[index - 1][0], points[index][1] - points[index - 1][1]));
+          }
+          const total = along[along.length - 1];
+          const moved = points.slice(first, final + 1).map((point, index) => {
+            let startWeight = a ? Math.max(0, 1 - along[index] / REACH) : 0;
+            let endWeight = b ? Math.max(0, 1 - (total - along[index]) / REACH) : 0;
+            if (startWeight + endWeight > 1) [startWeight, endWeight] = [startWeight / (startWeight + endWeight), endWeight / (startWeight + endWeight)];
+            return [0, 1].map((axis) => {
+              const startShift = a ? a[axis] - points[first][axis] : 0;
+              const endShift = b ? b[axis] - points[final][axis] : 0;
+              return point[axis] + startShift * startWeight + endShift * endWeight;
+            });
+          });
+          measure(target, () => drawPoly({ points: moved, closed: false, fill: false }));
+        }
+        if (poly.closed) {
+          const lastIndex = points.length - 1;
+          const same = Math.hypot(points[lastIndex][0] - points[0][0], points[lastIndex][1] - points[0][1]) < 0.25;
+          const a = snapped.get(lastIndex) ?? (same ? snapped.get(0) : undefined) ?? points[lastIndex];
+          const b = snapped.get(0) ?? (same ? snapped.get(lastIndex) : undefined) ?? points[0];
+          if (Math.hypot(a[0] - b[0], a[1] - b[1]) > 0.01) measure(target, () => drawPoly({ points: [a, b], closed: false, fill: false }));
+        }
+        for (const [from, to] of drawn) lightLine(from, to, poly.center);
+      };
+      // 曲線どうしが出会うくぼみは点 1 個より浅いことが多く、そのままだと埋まって平らになる（小さなハートがひし形に見える）。
+      // くぼみの点を灯し、2 本の曲線が開いている側の隣の点を消して、凹みを 1 点分作る
+      const carveCusps = (poly) => {
+        const { points } = poly;
+        for (const index of poly.cusps ?? []) {
+          if (index < 4 || index > points.length - 5) continue;
+          const back = [points[index - 4][0] - points[index][0], points[index - 4][1] - points[index][1]];
+          const ahead = [points[index + 4][0] - points[index][0], points[index + 4][1] - points[index][1]];
+          const open = [back[0] / Math.hypot(...back) + ahead[0] / Math.hypot(...ahead), back[1] / Math.hypot(...back) + ahead[1] / Math.hypot(...ahead)];
+          if (Math.hypot(...open) < 0.3) continue;
+          const axis = Math.abs(open[0]) > Math.abs(open[1]) ? 0 : 1;
+          const cell = [toward(points[index][0], poly.center[0]), toward(points[index][1], poly.center[1])];
+          const outside = [...cell];
+          outside[axis] += Math.sign(open[axis]) * pitch;
+          const column = Math.round(outside[0] / pitch) - 1;
+          const row = Math.round(outside[1] / pitch) - 1;
+          light(cell[0], cell[1]);
+          if (column >= 0 && column < perSide && row >= 0 && row < perSide) target[row * perSide + column].coverage = 0;
+        }
+      };
+      for (const poly of fittedPolys(name)) {
+        target = lattice();
+        drawDots(poly);
+        carveCusps(poly);
+        // その線自身が左右（上下）対称なら、左（上）半分を右（下）へ写して、点の並びも対称にする
+        for (const axis of [0, 1]) {
+          if (!poly.mirror?.[axis]) continue;
+          const values = poly.points.map((point) => point[axis]);
+          const middle = (Math.min(...values) + Math.max(...values)) / 2;
+          if (Math.abs((2 * middle) / pitch - Math.round((2 * middle) / pitch)) > 1e-6) continue;
+          const at = (cell) => (axis === 0 ? cell.x : cell.y);
+          const before = target.map((cell) => cell.coverage);
+          target.forEach((cell) => {
+            if (at(cell) <= middle + 0.01) return;
+            const column = Math.round((axis === 0 ? 2 * middle - cell.x : cell.x) / pitch) - 1;
+            const row = Math.round((axis === 1 ? 2 * middle - cell.y : cell.y) / pitch) - 1;
+            if (column >= 0 && column < perSide && row >= 0 && row < perSide) cell.coverage = before[row * perSide + column];
+          });
+        }
+        target.forEach((cell, index) => {
+          cells[index].coverage = Math.max(cells[index].coverage, cell.coverage);
+        });
+      }
+      target = cells;
+      // 元の形が左右対称なら左半分を右へ、上下対称なら上半分を下へ写して、点の並びも必ず対称にする
+      if (symmetry.lr || symmetry.tb || symmetry.rot) {
+        const key = (x, y) => `${Math.round(x * 4)},${Math.round(y * 4)}`;
+        const mirror = (pick) => {
+          const byKey = new Map(cells.map((cell) => [key(cell.x, cell.y), cell.coverage]));
+          for (const cell of cells) {
+            const source = pick(cell);
+            if (source) cell.coverage = byKey.get(key(source[0], source[1]));
+          }
+        };
+        if (symmetry.lr) mirror((cell) => (cell.x > BOX / 2 + 0.01 ? [BOX - cell.x, cell.y] : null));
+        if (symmetry.tb) mirror((cell) => (cell.y > BOX / 2 + 0.01 ? [cell.x, BOX - cell.y] : null));
+        // 半回転で重なる形（更新マークなど）は、上半分を半回転して下半分に写す
+        if (symmetry.rot && !symmetry.lr && !symmetry.tb) {
+          mirror((cell) => (cell.y > BOX / 2 + 0.01 || (Math.abs(cell.y - BOX / 2) < 0.01 && cell.x > BOX / 2 + 0.01) ? [BOX - cell.x, BOX - cell.y] : null));
+        }
+      }
+    } else {
+      measure(cells, () => ICONS[name].forEach(drawNode));
+    }
+    return cells;
+  };
+
+  // 元の形（Lucide のままの線）が左右対称（lr）・上下対称（tb）かを調べる。食い違う面積が全体の 3% 未満なら対称とみなす
+  const symmetryCache = new Map();
+  const originalSymmetry = (name) => {
+    if (symmetryCache.has(name)) return symmetryCache.get(name);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.setTransform(SCALE, 0, 0, SCALE, 0, 0);
+    ctx.lineWidth = 2;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ICONS[name].forEach(drawNode);
+    const { data, width, height } = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let total = 0;
+    let differLr = 0;
+    let differTb = 0;
+    let differRot = 0;
+    for (let y = 0; y < height; y += 1) {
+      for (let x = 0; x < width; x += 1) {
+        const alpha = data[(y * width + x) * 4 + 3];
+        total += alpha;
+        differLr += Math.abs(alpha - data[(y * width + (width - 1 - x)) * 4 + 3]);
+        differTb += Math.abs(alpha - data[((height - 1 - y) * width + x) * 4 + 3]);
+        differRot += Math.abs(alpha - data[((height - 1 - y) * width + (width - 1 - x)) * 4 + 3]);
+      }
+    }
+    const result = { lr: differLr / total < 0.03, tb: differTb / total < 0.03, rot: differRot / total < 0.03 };
+    symmetryCache.set(name, result);
+    return result;
+  };
+  // 確認用: 元の形が左右対称か（original）、点にした結果が左右対称か（dots）を返す
+  const symmetryCheck = (name) => {
+    const key = (x, y) => `${Math.round(x * 4)},${Math.round(y * 4)}`;
+    const lit = rasterize(name).filter((cell) => cell.coverage >= state.threshold);
+    const keys = new Set(lit.map((cell) => key(cell.x, cell.y)));
+    return { original: originalSymmetry(name).lr, dots: lit.every((cell) => keys.has(key(BOX - cell.x, cell.y))) };
+  };
+
+  const fmt = (value) => String(Math.round(value * 1000) / 1000);
+  const dotPath = (x, y, radius, square) =>
+    square
+      ? `M${fmt(x - radius)} ${fmt(y - radius)}h${fmt(radius * 2)}v${fmt(radius * 2)}h${fmt(-radius * 2)}z`
+      : `M${fmt(x - radius)} ${fmt(y)}a${fmt(radius)} ${fmt(radius)} 0 1 0 ${fmt(radius * 2)} 0a${fmt(radius)} ${fmt(radius)} 0 1 0 ${fmt(-radius * 2)} 0z`;
+
+  const cache = new Map();
+  const dotData = (name) => {
+    if (cache.has(name)) return cache.get(name);
+    const { pitch, threshold, shape } = state;
+    const base = pitch * 0.42;
+    let on = "";
+    let off = "";
+    let count = 0;
+    for (const dot of rasterize(name)) {
+      if (shape === "halftone") {
+        if (dot.coverage >= 0.08) {
+          on += dotPath(dot.x, dot.y, base * Math.max(0.3, Math.min(1, Math.sqrt(dot.coverage) * 1.15)), false);
+          count += 1;
+        } else {
+          off += dotPath(dot.x, dot.y, base * 0.55, false);
+        }
+      } else if (dot.coverage >= threshold) {
+        on += dotPath(dot.x, dot.y, base, shape === "square");
+        count += 1;
+      } else {
+        off += dotPath(dot.x, dot.y, shape === "square" ? base * 0.55 : base * 0.55, shape === "square");
+      }
+    }
+    const result = { on, off, count };
+    cache.set(name, result);
+    return result;
+  };
+
+  const dotSvg = (name, size, withOff) => {
+    const { on, off } = dotData(name);
+    const offPath = withOff ? `<path class="dot-off" d="${off}"/>` : "";
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="${name}">${offPath}<path d="${on}"/></svg>`;
+  };
+
+  // 配るための SVG。先頭に、元のアイコンとライセンスを書いたコメントを付ける
+  const exportSvg = (name) => {
+    const info = LICENSE_INFO[LICENSES[name]];
+    const note = `<!-- "${name}" is derived from the Lucide icon of the same name (https://lucide.dev). ${info.label}, ${info.copyright}. See LICENSE-lucide.txt. -->`;
+    return `${note}\n<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="${dotData(name).on}"/></svg>`;
+  };
+
+  const lucideSvg = (name, size) => {
+    const body = ICONS[name]
+      .map(([tag, attrs]) => `<${tag} ${Object.entries(attrs).map(([key, value]) => `${key}="${value}"`).join(" ")}/>`)
+      .join("");
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
+  };
+
+  const el = (id) => document.getElementById(id);
+  const grid = el("js-grid");
+  const visibleCells = new Set();
+  let paintKey = 0;
+  // 一覧は数が多いので、見えている升目だけを描く
+  const paintQueue = new Set();
+  let paintScheduled = false;
+  const flushPaint = () => {
+    paintScheduled = false;
+    const started = performance.now();
+    for (const cell of paintQueue) {
+      paintQueue.delete(cell);
+      if (!visibleCells.has(cell) || cell.dataset.key === String(paintKey)) continue;
+      cell.firstElementChild.innerHTML = dotSvg(cell.dataset.name, 56, state.showOff);
+      cell.dataset.key = String(paintKey);
+      if (performance.now() - started > 12) break;
+    }
+    if (paintQueue.size > 0) {
+      paintScheduled = true;
+      requestAnimationFrame(flushPaint);
+    }
+  };
+  const paintCell = (cell) => {
+    if (cell.dataset.key === String(paintKey)) return;
+    paintQueue.add(cell);
+    if (paintScheduled) return;
+    paintScheduled = true;
+    requestAnimationFrame(flushPaint);
+  };
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          visibleCells.add(entry.target);
+          paintCell(entry.target);
+        } else {
+          visibleCells.delete(entry.target);
+        }
+      }
+    },
+    { root: el("js-grid-scroll"), rootMargin: "300px 0px" },
+  );
+
+  const renderDisplay = () => {
+    const name = state.selected;
+    const perSide = Math.round(BOX / state.pitch) - 1;
+    el("js-display-big").innerHTML = dotSvg(name, 340, state.showOff);
+    el("js-display-orig").innerHTML = lucideSvg(name, 56);
+    el("js-display-name").textContent = name.toUpperCase();
+    el("js-display-grid").textContent = `${perSide} × ${perSide}`;
+    el("js-display-count").textContent = `灯っている点 ${dotData(name).count} / ${perSide * perSide}`;
+    el("js-code").textContent = exportSvg(name);
+    const info = LICENSE_INFO[LICENSES[name]];
+    el("js-display-license").textContent = `${info.label} / ${info.copyright}（${info.origin}）`;
+    const sizes = [16, 20, 24, 32, 48, 72];
+    el("js-sizes").innerHTML =
+      `<tr><th>点にしたもの</th>${sizes.map((size) => `<td>${dotSvg(name, size, false)}</td>`).join("")}</tr>` +
+      `<tr><th>元の Lucide</th>${sizes.map((size) => `<td>${lucideSvg(name, size)}</td>`).join("")}</tr>`;
+    grid.querySelector('[aria-pressed="true"]')?.setAttribute("aria-pressed", "false");
+    grid.querySelector(`[data-name="${name}"]`)?.setAttribute("aria-pressed", "true");
+  };
+
+  const renderAll = () => {
+    cache.clear();
+    el("js-weight-out").textContent = state.weight.toFixed(1);
+    el("js-threshold-out").textContent = `${Math.round(state.threshold * 100)}%`;
+    el("js-threshold").disabled = state.shape === "halftone";
+    el("js-square").disabled = !state.fit;
+    paintKey += 1;
+    for (const cell of visibleCells) paintCell(cell);
+    for (const slot of document.querySelectorAll("[data-icon]")) {
+      slot.innerHTML = dotSvg(slot.dataset.icon, Number(slot.dataset.size), false);
+    }
+    renderDisplay();
+  };
+
+  const updateCount = (shown, total) => {
+    el("js-count").textContent = shown === total ? `Icons / ${total}` : `Icons / ${shown} of ${total}`;
+  };
+  const buildGrid = () => {
+    const names = Object.keys(ICONS);
+    const fragment = document.createDocumentFragment();
+    for (const name of names) {
+      const cell = document.createElement("button");
+      cell.type = "button";
+      cell.className = "cell";
+      cell.dataset.name = name;
+      cell.setAttribute("aria-pressed", "false");
+      cell.innerHTML = `<span></span><small>${name}</small><small class="license">${LICENSES[name]}</small>`;
+      fragment.append(cell);
+      observer.observe(cell);
+    }
+    grid.replaceChildren(fragment);
+    updateCount(names.length, names.length);
+  };
+  grid.addEventListener("click", (event) => {
+    const cell = event.target.closest(".cell");
+    if (!cell) return;
+    state.selected = cell.dataset.name;
+    renderDisplay();
+  });
+  el("js-search").addEventListener("input", (event) => {
+    const words = event.target.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+    let shown = 0;
+    for (const cell of grid.children) {
+      const match = words.every((word) => cell.dataset.name.includes(word));
+      cell.hidden = !match;
+      if (match) shown += 1;
+    }
+    updateCount(shown, grid.children.length);
+  });
+
+  el("js-pitch").addEventListener("change", (event) => {
+    state.pitch = Number(event.target.value);
+    state.weight = DEFAULT_WEIGHT[state.pitch];
+    el("js-weight").value = String(state.weight);
+    renderAll();
+  });
+  el("js-shape").addEventListener("change", (event) => {
+    state.shape = event.target.value;
+    renderAll();
+  });
+  el("js-weight").addEventListener("input", (event) => {
+    state.weight = Number(event.target.value);
+    renderAll();
+  });
+  el("js-threshold").addEventListener("input", (event) => {
+    state.threshold = Number(event.target.value);
+    renderAll();
+  });
+  el("js-fit").addEventListener("change", (event) => {
+    state.fit = event.target.checked;
+    renderAll();
+  });
+  el("js-square").addEventListener("change", (event) => {
+    state.square = event.target.checked;
+    renderAll();
+  });
+  el("js-show-off").addEventListener("change", (event) => {
+    state.showOff = event.target.checked;
+    renderAll();
+  });
+  el("js-copy").addEventListener("click", async () => {
+    const button = el("js-copy");
+    const code = el("js-code");
+    try {
+      await navigator.clipboard.writeText(code.textContent);
+      button.textContent = "コピーしました";
+    } catch {
+      const range = document.createRange();
+      range.selectNodeContents(code);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+      button.textContent = "下の枠を選択しました。Ctrl / ⌘ + C でコピーしてください";
+    }
+    window.setTimeout(() => {
+      button.textContent = "表示中のアイコンの SVG をコピー";
+    }, 2500);
+  });
+
+  fetch("icons.json")
+    .then((response) => {
+      if (!response.ok) throw new Error(String(response.status));
+      return response.json();
+    })
+    .then((list) => {
+      ICONS = Object.fromEntries(list);
+      LICENSES = Object.fromEntries(list.map(([name, , license]) => [name, license]));
+      const tally = { ISC: 0, MIT: 0 };
+      for (const license of Object.values(LICENSES)) tally[license] += 1;
+      el("js-license-isc").textContent = String(tally.ISC);
+      el("js-license-mit").textContent = String(tally.MIT);
+      buildGrid();
+      renderAll();
+    })
+    .catch(() => {
+      el("js-loading").textContent = "アイコンのデータ（icons.json）を読み込めませんでした。ページを開き直してください。";
+    });
+</script>

@@ -1,0 +1,9315 @@
+{
+  "source": "lucide-react 1.49.0",
+  "grid": "15 x 15",
+  "viewBox": "0 0 24 24",
+  "settings": {
+    "pitch": 1.5,
+    "weight": 1.6,
+    "threshold": 0.4,
+    "shape": "circle",
+    "fit": true,
+    "square": true,
+    "cavity": true
+  },
+  "count": 1857,
+  "licenses": {
+    "ISC": {
+      "name": "ISC License",
+      "copyright": "Copyright (c) 2026 Lucide Icons and Contributors",
+      "icons": 1743
+    },
+    "MIT": {
+      "name": "MIT License",
+      "copyright": "Copyright (c) 2013-present Cole Bemis",
+      "icons": 114
+    },
+    "fullText": "LICENSE-lucide.txt"
+  },
+  "icons": [
+    {
+      "name": "a-arrow-down",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "a-arrow-up",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "a-large-small",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "accessibility",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "activity",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "ad",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "air-vent",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "airplay",
+      "dots": 50,
+      "license": "MIT"
+    },
+    {
+      "name": "alarm-clock",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "alarm-clock-check",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "alarm-clock-minus",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "alarm-clock-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "alarm-clock-plus",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "alarm-smoke",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "align-center-horizontal",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "align-center-vertical",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "align-end-horizontal",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "align-end-vertical",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-distribute-center",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-distribute-end",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-distribute-start",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-justify-center",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-justify-end",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-justify-start",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-space-around",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "align-horizontal-space-between",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-start-horizontal",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "align-start-vertical",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-distribute-center",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-distribute-end",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-distribute-start",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-justify-center",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-justify-end",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-justify-start",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-space-around",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "align-vertical-space-between",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "ambulance",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "ampersand",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "ampersands",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "amphora",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "anchor",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "angle",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "antenna",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "anvil",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "aperture",
+      "dots": 80,
+      "license": "MIT"
+    },
+    {
+      "name": "app-window",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "app-window-mac",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "apple",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "archive",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "archive-restore",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "archive-x",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "armchair",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-down",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-down-dash",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-left",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-left-dash",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-right",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-right-dash",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-up",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-big-up-dash",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down",
+      "dots": 21,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-down-0-1",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-1-0",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-a-z",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-from-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-left",
+      "dots": 19,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-down-narrow-wide",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-right",
+      "dots": 19,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-down-to-dot",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-to-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-up",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-wide-narrow",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-down-z-a",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-left",
+      "dots": 21,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-left-from-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-left-right",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-left-to-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-right",
+      "dots": 21,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-right-from-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-right-left",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-right-to-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up",
+      "dots": 21,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-up-0-1",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-1-0",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-a-z",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-down",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-from-dot",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-from-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-left",
+      "dots": 19,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-up-narrow-wide",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-right",
+      "dots": 19,
+      "license": "MIT"
+    },
+    {
+      "name": "arrow-up-to-line",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-wide-narrow",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "arrow-up-z-a",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "arrows-up-from-line",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "asterisk",
+      "dots": 25,
+      "license": "ISC"
+    },
+    {
+      "name": "astroid",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "at-sign",
+      "dots": 68,
+      "license": "MIT"
+    },
+    {
+      "name": "atom",
+      "dots": 93,
+      "license": "ISC"
+    },
+    {
+      "name": "audio-lines",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "audio-lines-off",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "audio-lines-x",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "audio-waveform",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "award",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "axe",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "axis-3d",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "baby",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "backpack",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "badge",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-alert",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-cent",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-check",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-dollar-sign",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-euro",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-indian-rupee",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-info",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-japanese-yen",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-minus",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-percent",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-plus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-pound-sterling",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-question-mark",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-russian-ruble",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-swiss-franc",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-turkish-lira",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "badge-x",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "baggage-claim",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "balloon",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "ban",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "banana",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "bandage",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "bangladeshi-taka",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "banknote",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "banknote-arrow-down",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "banknote-arrow-up",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "banknote-check",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "banknote-x",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "barcode",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "barrel",
+      "dots": 88,
+      "license": "ISC"
+    },
+    {
+      "name": "baseline",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "bath",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "battery",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "battery-charging",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "battery-full",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "battery-low",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "battery-medium",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "battery-plus",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "battery-warning",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "beaker",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "bean",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "bean-off",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "bed",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "bed-double",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "bed-single",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "beef",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "beef-off",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "beer",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "beer-off",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "bell",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-check",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-dot",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-electric",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-minus",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-plus",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "bell-ring",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "between-horizontal-end",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "between-horizontal-start",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "between-vertical-end",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "between-vertical-start",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "biceps-flexed",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "bike",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "binary",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "binoculars",
+      "dots": 88,
+      "license": "ISC"
+    },
+    {
+      "name": "biohazard",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "bird",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "birdhouse",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "bitcoin",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "blend",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "blender",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "blinds",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "blocks",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "bluetooth",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "bluetooth-connected",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "bluetooth-off",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "bluetooth-searching",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "bold",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "bolt",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "bomb",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "bone",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "bone-fracture",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "book",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "book-a",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "book-alert",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "book-audio",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "book-bookmark",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "book-check",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "book-copy",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "book-dashed",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "book-down",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "book-headphones",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "book-heart",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "book-image",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "book-key",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "book-lock",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "book-minus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "book-open",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "book-open-check",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "book-open-text",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "book-plus",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "book-search",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "book-text",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "book-type",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "book-up",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "book-up-2",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "book-user",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "book-x",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "bookmark",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "bookmark-check",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "bookmark-minus",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "bookmark-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "bookmark-plus",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "bookmark-x",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "boom-box",
+      "dots": 82,
+      "license": "ISC"
+    },
+    {
+      "name": "bot",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "bot-message-square",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "bot-off",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "bottle-wine",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "bow-arrow",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "box",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "boxes",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "braces",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "brackets",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "brain",
+      "dots": 83,
+      "license": "ISC"
+    },
+    {
+      "name": "brain-circuit",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "brain-cog",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "brick-wall",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "brick-wall-fire",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "brick-wall-shield",
+      "dots": 82,
+      "license": "ISC"
+    },
+    {
+      "name": "bridge",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "briefcase",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "briefcase-business",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "briefcase-conveyor-belt",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "briefcase-medical",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "briefcase-plus",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "bring-to-front",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "broccoli",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "broom",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "broom-sparkles",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "brush",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "brush-cleaning",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "bubbles",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "bug",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "bug-off",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "bug-play",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "building",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "building-complex",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "building-complex-plus",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "bus",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "bus-front",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "cable",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "cable-car",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "cake",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "cake-slice",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "calculator",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar",
+      "dots": 63,
+      "license": "MIT"
+    },
+    {
+      "name": "calendar-1",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-arrow-down",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-arrow-up",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-check",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-check-2",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-chevrons-right",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-clock",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-cog",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-days",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-fold",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-heart",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-minus",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-minus-2",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-off",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-plus",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-plus-2",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-range",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-search",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-sync",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-x",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "calendar-x-2",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "calendars",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "camera",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "camera-off",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "can",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "can-soda",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "candy",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "candy-cane",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "candy-off",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "cannabis",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "cannabis-off",
+      "dots": 77,
+      "license": "ISC"
+    },
+    {
+      "name": "captions",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "captions-off",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "car",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "car-battery",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "car-front",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "car-taxi-front",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "caravan",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "card-sim",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "carrot",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "carton",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "carton-off",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "case-lower",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "case-sensitive",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "case-upper",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "cassette-tape",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "cast",
+      "dots": 51,
+      "license": "MIT"
+    },
+    {
+      "name": "castle",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "cat",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "cctv",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "cctv-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-area",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-bar",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-bar-big",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-bar-decreasing",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-bar-increasing",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-bar-stacked",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-candlestick",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-column",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-column-big",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-column-decreasing",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-column-increasing",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-column-stacked",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-gantt",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-line",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-network",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-no-axes-column",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-no-axes-column-decreasing",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-no-axes-column-increasing",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-no-axes-combined",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-no-axes-gantt",
+      "dots": 22,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-pie",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-scatter",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "chart-spline",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "check",
+      "dots": 11,
+      "license": "MIT"
+    },
+    {
+      "name": "check-check",
+      "dots": 18,
+      "license": "ISC"
+    },
+    {
+      "name": "check-line",
+      "dots": 24,
+      "license": "ISC"
+    },
+    {
+      "name": "chef-hat",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "cherry",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "chess-bishop",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "chess-king",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "chess-knight",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "chess-pawn",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "chess-queen",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "chess-rook",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "chevron-down",
+      "dots": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "chevron-first",
+      "dots": 18,
+      "license": "ISC"
+    },
+    {
+      "name": "chevron-last",
+      "dots": 18,
+      "license": "ISC"
+    },
+    {
+      "name": "chevron-left",
+      "dots": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "chevron-right",
+      "dots": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "chevron-up",
+      "dots": 9,
+      "license": "MIT"
+    },
+    {
+      "name": "chevrons-down",
+      "dots": 14,
+      "license": "MIT"
+    },
+    {
+      "name": "chevrons-down-up",
+      "dots": 14,
+      "license": "ISC"
+    },
+    {
+      "name": "chevrons-left",
+      "dots": 14,
+      "license": "MIT"
+    },
+    {
+      "name": "chevrons-left-right",
+      "dots": 14,
+      "license": "ISC"
+    },
+    {
+      "name": "chevrons-left-right-ellipsis",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "chevrons-right",
+      "dots": 14,
+      "license": "MIT"
+    },
+    {
+      "name": "chevrons-right-left",
+      "dots": 14,
+      "license": "ISC"
+    },
+    {
+      "name": "chevrons-up",
+      "dots": 14,
+      "license": "MIT"
+    },
+    {
+      "name": "chevrons-up-down",
+      "dots": 14,
+      "license": "ISC"
+    },
+    {
+      "name": "church",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "cigarette",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "cigarette-off",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "circle",
+      "dots": 40,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-alert",
+      "dots": 45,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-arrow-down",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-arrow-left",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-arrow-out-down-left",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-arrow-out-down-right",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-arrow-out-up-left",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-arrow-out-up-right",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-arrow-right",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-arrow-up",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-check",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-check-big",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-chevron-down",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-chevron-left",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-chevron-right",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-chevron-up",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-dashed",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-dashed-check",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-divide",
+      "dots": 49,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-dollar-sign",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-dot",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-dot-dashed",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-ellipsis",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-equal",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-euro",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-fading-arrow-up",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-fading-plus",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-gauge",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-minus",
+      "dots": 47,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-off",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-parking",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-parking-off",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-pause",
+      "dots": 50,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-percent",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-pile",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-play",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-plus",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-pound-sterling",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-power",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-question-mark",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "circle-slash",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-slash-2",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-small",
+      "dots": 24,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-star",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-stop",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-user",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-user-round",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "circle-x",
+      "dots": 49,
+      "license": "MIT"
+    },
+    {
+      "name": "circuit-board",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "citrus",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "clapperboard",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "clef-alto",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "clef-bass",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "clef-treble",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard",
+      "dots": 55,
+      "license": "MIT"
+    },
+    {
+      "name": "clipboard-check",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-clock",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-copy",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-list",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-minus",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-paste",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-pen",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-pen-line",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-plus",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-type",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "clipboard-x",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "clock",
+      "dots": 48,
+      "license": "MIT"
+    },
+    {
+      "name": "clock-1",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-10",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-11",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-12",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-2",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-3",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-4",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-5",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-6",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-7",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-8",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-9",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-alert",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-arrow-down",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-arrow-left",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-arrow-right",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-arrow-up",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-check",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-fading",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "clock-plus",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "closed-caption",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-alert",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-backup",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-check",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-cog",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-download",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-drizzle",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-fog",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-hail",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-lightning",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-moon",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-moon-rain",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-off",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-rain",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-rain-wind",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-snow",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-sun",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-sun-rain",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-sync",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "cloud-upload",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "cloudy",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "clover",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "club",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "code",
+      "dots": 18,
+      "license": "MIT"
+    },
+    {
+      "name": "code-xml",
+      "dots": 25,
+      "license": "ISC"
+    },
+    {
+      "name": "coffee",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "cog",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "coins",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "columns-2",
+      "dots": 59,
+      "license": "MIT"
+    },
+    {
+      "name": "columns-3",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "columns-3-cog",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "columns-4",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "combine",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "command",
+      "dots": 76,
+      "license": "MIT"
+    },
+    {
+      "name": "compass",
+      "dots": 58,
+      "license": "MIT"
+    },
+    {
+      "name": "component",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "computer",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "concierge-bell",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "cone",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "construction",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "contact",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "contact-round",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "container",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "contrast",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "cookie",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "cooking-pot",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "copy",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "copy-check",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "copy-minus",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "copy-plus",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "copy-slash",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "copy-x",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "copyleft",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "copyright",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "corner-down-left",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-down-right",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-left-down",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-left-up",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-right-down",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-right-up",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-up-left",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "corner-up-right",
+      "dots": 24,
+      "license": "MIT"
+    },
+    {
+      "name": "cpu",
+      "dots": 84,
+      "license": "ISC"
+    },
+    {
+      "name": "creative-commons",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "credit-card",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "credit-card-check",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "credit-card-minus",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "credit-card-plus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "credit-card-reader",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "credit-card-x",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "croissant",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "crop",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "cross",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "crosshair",
+      "dots": 52,
+      "license": "MIT"
+    },
+    {
+      "name": "crown",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "cuboid",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "cup-soda",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "cupcake",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "currency",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "cylinder",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "dam",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "database",
+      "dots": 78,
+      "license": "MIT"
+    },
+    {
+      "name": "database-arrow-down",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "database-arrow-up",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "database-backup",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "database-check",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "database-minus",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "database-plus",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "database-search",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "database-x",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "database-zap",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "decimals-arrow-left",
+      "dots": 24,
+      "license": "ISC"
+    },
+    {
+      "name": "decimals-arrow-right",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "delete",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "dessert",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "diameter",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "diamond",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "diamond-minus",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "diamond-percent",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "diamond-plus",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "dice-1",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "dice-2",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "dice-3",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "dice-4",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "dice-5",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "dice-6",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "dices",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "diff",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "disc",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "disc-2",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "disc-3",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "disc-album",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "divide",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "dna",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "dna-off",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "dock",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "dog",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "dollar-sign",
+      "dots": 46,
+      "license": "MIT"
+    },
+    {
+      "name": "dome",
+      "dots": 77,
+      "license": "ISC"
+    },
+    {
+      "name": "donut",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "door-closed",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "door-closed-locked",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "door-closed-package",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "door-open",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "door-stairwell",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "dot",
+      "dots": 9,
+      "license": "ISC"
+    },
+    {
+      "name": "download",
+      "dots": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "drafting-compass",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "drama",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "drill",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "drone",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "droplet",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "droplet-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "droplets",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "drum",
+      "dots": 92,
+      "license": "ISC"
+    },
+    {
+      "name": "drumstick",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "dumbbell",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "ear",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "ear-off",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "earth",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "earth-lock",
+      "dots": 89,
+      "license": "ISC"
+    },
+    {
+      "name": "eclipse",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "egg",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "egg-fried",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "egg-off",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "eject",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "ellipse",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "ellipsis",
+      "dots": 27,
+      "license": "MIT"
+    },
+    {
+      "name": "ellipsis-vertical",
+      "dots": 27,
+      "license": "MIT"
+    },
+    {
+      "name": "engine",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "equal",
+      "dots": 22,
+      "license": "ISC"
+    },
+    {
+      "name": "equal-approximately",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "equal-approximately-not",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "equal-not",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "eraser",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "ethernet-port",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "euro",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "ev-charger",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "expand",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "external-link",
+      "dots": 47,
+      "license": "MIT"
+    },
+    {
+      "name": "eye",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "eye-closed",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "eye-dashed",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "eye-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "face-angry",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "face-expressionless",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "face-grinning",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "face-neutral",
+      "dots": 51,
+      "license": "MIT"
+    },
+    {
+      "name": "face-slightly-frowning",
+      "dots": 49,
+      "license": "MIT"
+    },
+    {
+      "name": "face-slightly-smiling",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "face-slightly-smiling-plus",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "factory",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "fan",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "fast-forward",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "faucet",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "feather",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "fence",
+      "dots": 90,
+      "license": "ISC"
+    },
+    {
+      "name": "ferris-wheel",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "file",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "file-archive",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "file-axis-3d",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "file-badge",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-box",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "file-braces",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "file-braces-corner",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "file-chart-column",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "file-chart-column-increasing",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "file-chart-line",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "file-chart-pie",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "file-check",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "file-check-corner",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "file-clock",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "file-code",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "file-code-corner",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "file-cog",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "file-diff",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "file-digit",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "file-down",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-exclamation-point",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "file-headphone",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "file-heart",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "file-image",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "file-input",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "file-key",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "file-lock",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "file-minus",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "file-minus-corner",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "file-music",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "file-output",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "file-pen",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "file-pen-line",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "file-play",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "file-plus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-plus-corner",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "file-question-mark",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "file-scan",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "file-search",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "file-search-corner",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "file-signal",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-sliders",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "file-spreadsheet",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "file-stack",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "file-symlink",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "file-terminal",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-text",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "file-type",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "file-type-corner",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "file-up",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-user",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "file-video-camera",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "file-volume",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "file-x",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "file-x-corner",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "files",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "film",
+      "dots": 87,
+      "license": "ISC"
+    },
+    {
+      "name": "fingerprint-pattern",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "fire-extinguisher",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "fish",
+      "dots": 83,
+      "license": "ISC"
+    },
+    {
+      "name": "fish-off",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "fish-symbol",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "fishing-hook",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "fishing-rod",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "flag",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "flag-off",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "flag-triangle-left",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "flag-triangle-right",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "flame",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "flame-kindling",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "flashlight",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "flashlight-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "flask-conical",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "flask-conical-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "flask-round",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "flower",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "flower-2",
+      "dots": 89,
+      "license": "ISC"
+    },
+    {
+      "name": "focus",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "fold-horizontal",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "fold-vertical",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "folder",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-archive",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-bookmark",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-check",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-clock",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-closed",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-code",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-cog",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-dot",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-down",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-git",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-git-2",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-heart",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-input",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-kanban",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-key",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-lock",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-minus",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-open",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-open-dot",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-output",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-pen",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-plus",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-root",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-search",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-search-2",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-symlink",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-sync",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-tree",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-up",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "folder-x",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "folders",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "footprints",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "forklift",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "form",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "forward",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "frame",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "fuel",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "fullscreen",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "funnel",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "funnel-plus",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "funnel-x",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "galaxy",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "gallery-horizontal",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "gallery-horizontal-end",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "gallery-thumbnails",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "gallery-vertical",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "gallery-vertical-end",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "gamepad",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "gamepad-2",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "gamepad-directional",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "gap-horizontal",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "gap-vertical",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "gauge",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "gavel",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "gem",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "georgian-lari",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "germ",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "germ-off",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "ghost",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "gift",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "git-branch",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "git-branch-minus",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "git-branch-plus",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "git-commit-horizontal",
+      "dots": 20,
+      "license": "ISC"
+    },
+    {
+      "name": "git-commit-vertical",
+      "dots": 20,
+      "license": "ISC"
+    },
+    {
+      "name": "git-compare",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "git-compare-arrows",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "git-fork",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "git-graph",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "git-merge",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "git-merge-conflict",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "git-pull-request",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "git-pull-request-arrow",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "git-pull-request-closed",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "git-pull-request-create",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "git-pull-request-create-arrow",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "git-pull-request-draft",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "glass-water",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "glasses",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "globe",
+      "dots": 87,
+      "license": "ISC"
+    },
+    {
+      "name": "globe-check",
+      "dots": 83,
+      "license": "ISC"
+    },
+    {
+      "name": "globe-code",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "globe-lock",
+      "dots": 90,
+      "license": "ISC"
+    },
+    {
+      "name": "globe-off",
+      "dots": 95,
+      "license": "ISC"
+    },
+    {
+      "name": "globe-x",
+      "dots": 87,
+      "license": "ISC"
+    },
+    {
+      "name": "goal",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "gpu",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "graduation-cap",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "grape",
+      "dots": 98,
+      "license": "ISC"
+    },
+    {
+      "name": "grid-2x2",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "grid-2x2-check",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "grid-2x2-plus",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "grid-2x2-x",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "grid-3x2",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "grid-3x3",
+      "dots": 88,
+      "license": "ISC"
+    },
+    {
+      "name": "grip",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "grip-horizontal",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "grip-vertical",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "group",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "guitar",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "ham",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "hamburger",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "hammer",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "hand",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-coins",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-fist",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-grab",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-heart",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-helping",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-metal",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "hand-platter",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "handbag",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "handshake",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "hard-drive",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "hard-drive-download",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "hard-drive-upload",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "hard-hat",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "hash",
+      "dots": 44,
+      "license": "MIT"
+    },
+    {
+      "name": "hat-glasses",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "haze",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "hd",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "hdmi-port",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "heading",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "heading-1",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "heading-2",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "heading-3",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "heading-4",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "heading-5",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "heading-6",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "headphone-off",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "headphones",
+      "dots": 57,
+      "license": "MIT"
+    },
+    {
+      "name": "headset",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "heart",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-crack",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-handshake",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-minus",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-off",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-plus",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-pulse",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "heart-x",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "heater",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "helicopter",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "hexagon",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "highlighter",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "hop",
+      "dots": 104,
+      "license": "ISC"
+    },
+    {
+      "name": "hop-off",
+      "dots": 97,
+      "license": "ISC"
+    },
+    {
+      "name": "hospital",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "hotel",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "hourglass",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "hourglass-cog",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "house",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "house-cog",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "house-heart",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "house-plug",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "house-plus",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "house-wifi",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "houses",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "ice-cream-bowl",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "ice-cream-cone",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "id-card",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "id-card-lanyard",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "image",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "image-down",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "image-minus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "image-off",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "image-play",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "image-plus",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "image-up",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "image-upscale",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "images",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "import",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "inbox",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "indian-rupee",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "infinity",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "info",
+      "dots": 45,
+      "license": "MIT"
+    },
+    {
+      "name": "inspection-panel",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "italic",
+      "dots": 23,
+      "license": "MIT"
+    },
+    {
+      "name": "iteration-ccw",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "iteration-cw",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "iv-bag",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "japanese-yen",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "joystick",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "kanban",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "kayak",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "key",
+      "dots": 35,
+      "license": "MIT"
+    },
+    {
+      "name": "key-round",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "key-square",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "keyboard",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "keyboard-music",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "keyboard-off",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "lambda",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "lamp",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "lamp-ceiling",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "lamp-desk",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "lamp-floor",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "lamp-wall-down",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "lamp-wall-up",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "land-plot",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "landmark",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "languages",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "laptop",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "laptop-minimal",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "laptop-minimal-check",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "lasso",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "lasso-select",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "layer-arrow-down",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "layer-arrow-up",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "layers",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "layers-2",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "layers-arrow-down",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "layers-arrow-up",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "layers-minus",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "layers-plus",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-arrow-down",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-arrow-right",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-dashboard",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-freeform",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-grid",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-list",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-panel-left",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-panel-top",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "layout-template",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "leaf",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "leafy-green",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "lectern",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "lens-concave",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "lens-convex",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "letters",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "library",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "library-big",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "life-buoy",
+      "dots": 64,
+      "license": "MIT"
+    },
+    {
+      "name": "ligature",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "lightbulb",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "lightbulb-off",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "lighthouse",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "line-dot-bottom-vertical",
+      "dots": 20,
+      "license": "ISC"
+    },
+    {
+      "name": "line-dot-left-horizontal",
+      "dots": 20,
+      "license": "ISC"
+    },
+    {
+      "name": "line-dot-right-horizontal",
+      "dots": 20,
+      "license": "ISC"
+    },
+    {
+      "name": "line-dot-top-vertical",
+      "dots": 20,
+      "license": "ISC"
+    },
+    {
+      "name": "line-squiggle",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "line-style",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "link",
+      "dots": 48,
+      "license": "MIT"
+    },
+    {
+      "name": "link-2",
+      "dots": 29,
+      "license": "MIT"
+    },
+    {
+      "name": "link-2-off",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "list",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "list-check",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "list-checks",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "list-chevrons-down-up",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "list-chevrons-up-down",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "list-clock",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "list-collapse",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "list-end",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "list-filter",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "list-filter-plus",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "list-indent-decrease",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "list-indent-increase",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "list-minus",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "list-music",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "list-ordered",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "list-plus",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "list-restart",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "list-sort-ascending",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "list-sort-descending",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "list-start",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "list-todo",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "list-tree",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "list-video",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "list-x",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "loader",
+      "dots": 28,
+      "license": "MIT"
+    },
+    {
+      "name": "loader-circle",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "loader-pinwheel",
+      "dots": 99,
+      "license": "ISC"
+    },
+    {
+      "name": "locate",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "locate-fixed",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "locate-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "lock",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "lock-keyhole",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "lock-keyhole-open",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "lock-open",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "log-in",
+      "dots": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "log-out",
+      "dots": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "logs",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "lollipop",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "luggage",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "magnet",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "mail",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-badge",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-check",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-clock",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-minus",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-open",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-pen",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-plus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-question-mark",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-search",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-warning",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "mail-x",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "mailbox",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "mails",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "map",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "map-minus",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-check",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-check-inside",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-house",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-minus",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-minus-inside",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-off",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-pen",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-plus",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-plus-inside",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-search",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-x",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pin-x-inside",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "map-pinned",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "map-plus",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "mars",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "mars-stroke",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "martini",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "maximize",
+      "dots": 28,
+      "license": "MIT"
+    },
+    {
+      "name": "maximize-2",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "medal",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "megaphone",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "megaphone-off",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "memory-stick",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "menu",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "merge",
+      "dots": 23,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-check",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-code",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-dashed",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-dashed-check",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-heart",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-more",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-off",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-plus",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-question-mark",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-reply",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-warning",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "message-circle-x",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-check",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-code",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-dashed",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-diff",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-dot",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-heart",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-lock",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-more",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-off",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-plus",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-quote",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-reply",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-share",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-text",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-warning",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "message-square-x",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "messages-circle",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "messages-square",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "metronome",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "mic",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "mic-audio-lines",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "mic-off",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "mic-signal",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "mic-vocal",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "microchip",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "microscope",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "microwave",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "midi-port",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "milestone",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "milk",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "milk-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "minimize",
+      "dots": 28,
+      "license": "MIT"
+    },
+    {
+      "name": "minimize-2",
+      "dots": 28,
+      "license": "MIT"
+    },
+    {
+      "name": "minus",
+      "dots": 11,
+      "license": "MIT"
+    },
+    {
+      "name": "mirror-rectangular",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "mirror-round",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor",
+      "dots": 55,
+      "license": "MIT"
+    },
+    {
+      "name": "monitor-check",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-cloud",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-cog",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-dot",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-down",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-off",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-pause",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-pc",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-play",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-smartphone",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-speaker",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-stop",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-up",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "monitor-x",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "moon",
+      "dots": 53,
+      "license": "MIT"
+    },
+    {
+      "name": "moon-star",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "mop",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "mop-sparkles",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "mosque",
+      "dots": 87,
+      "license": "ISC"
+    },
+    {
+      "name": "motorbike",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "mountain",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "mountain-snow",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-left",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-off",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-pointer",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-pointer-2",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-pointer-2-off",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-pointer-ban",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-pointer-click",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "mouse-right",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "mouth",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "mouth-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "move",
+      "dots": 45,
+      "license": "MIT"
+    },
+    {
+      "name": "move-3d",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "move-diagonal",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "move-diagonal-2",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "move-down",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "move-down-left",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "move-down-right",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "move-horizontal",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "move-left",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "move-right",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "move-up",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "move-up-left",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "move-up-right",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "move-vertical",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "music",
+      "dots": 51,
+      "license": "MIT"
+    },
+    {
+      "name": "music-2",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "music-3",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "music-4",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "navigation",
+      "dots": 34,
+      "license": "MIT"
+    },
+    {
+      "name": "navigation-2",
+      "dots": 35,
+      "license": "MIT"
+    },
+    {
+      "name": "navigation-2-off",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "navigation-off",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "nepali-rupee",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "network",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "newspaper",
+      "dots": 89,
+      "license": "ISC"
+    },
+    {
+      "name": "nfc",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "non-binary",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "notebook",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "notebook-dot",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "notebook-pen",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "notebook-tabs",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "notebook-text",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "notepad-text",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "notepad-text-dashed",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "nut",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "nut-off",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "octagon",
+      "dots": 40,
+      "license": "MIT"
+    },
+    {
+      "name": "octagon-alert",
+      "dots": 45,
+      "license": "MIT"
+    },
+    {
+      "name": "octagon-minus",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "octagon-pause",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "octagon-x",
+      "dots": 49,
+      "license": "MIT"
+    },
+    {
+      "name": "omega",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "option",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "orbit",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "origami",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "package",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "package-2",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "package-check",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "package-minus",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "package-open",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "package-plus",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "package-search",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "package-x",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "paint-bucket",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "paint-roller",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "paintbrush",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "paintbrush-vertical",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "palette",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "panda",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-bottom",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-bottom-close",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-bottom-dashed",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-bottom-open",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-left",
+      "dots": 59,
+      "license": "MIT"
+    },
+    {
+      "name": "panel-left-close",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-left-dashed",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-left-open",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-left-right-dashed",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-right",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-right-close",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-right-dashed",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-right-open",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-top",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-top-bottom-dashed",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-top-close",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-top-dashed",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "panel-top-open",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "panels-left-bottom",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "panels-right-bottom",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "panels-top-left",
+      "dots": 66,
+      "license": "MIT"
+    },
+    {
+      "name": "paper-bag",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "paperclip",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "parasol",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "parentheses",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "park",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "parking-meter",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "party-popper",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "pause",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "paw-print",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "pc-case",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "pen",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "pen-line",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "pen-off",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "pen-tool",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "pencil",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "pencil-line",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "pencil-off",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "pencil-ruler",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "pencil-sparkles",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "pentagon",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "percent",
+      "dots": 27,
+      "license": "MIT"
+    },
+    {
+      "name": "person-standing",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "phi",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "philippine-peso",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "phone",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "phone-call",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "phone-forwarded",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "phone-incoming",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "phone-missed",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "phone-off",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "phone-outgoing",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "pi",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "piano",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "pickaxe",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "picture-in-picture",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "picture-in-picture-2",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "piggy-bank",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "pilcrow",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "pilcrow-left",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "pilcrow-right",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "pill",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "pill-bottle",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "pin",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "pin-off",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "pipette",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "pizza",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "plane",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "plane-landing",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "plane-takeoff",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "plant-pot",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "play",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "play-off",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "playing-card",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "playing-cards",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "playing-cards-fan",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "plug",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "plug-2",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "plug-zap",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "plus",
+      "dots": 21,
+      "license": "MIT"
+    },
+    {
+      "name": "pocket-knife",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "podium",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "pointer",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "pointer-off",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "popcorn",
+      "dots": 83,
+      "license": "ISC"
+    },
+    {
+      "name": "popsicle",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "pound-sterling",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "power",
+      "dots": 33,
+      "license": "MIT"
+    },
+    {
+      "name": "power-off",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "presentation",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "printer",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "printer-3d",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "printer-check",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "printer-x",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "projector",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "proportions",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "puzzle",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "pyramid",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "qr-code",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "quote",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "rabbit",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "radar",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "radiation",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "radical",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "radio",
+      "dots": 52,
+      "license": "MIT"
+    },
+    {
+      "name": "radio-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "radio-receiver",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "radio-tower",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "radius",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "rainbow",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "rat",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "ratio",
+      "dots": 84,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-cent",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-euro",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-indian-rupee",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-japanese-yen",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-pound-sterling",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-russian-ruble",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-swiss-franc",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-text",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "receipt-turkish-lira",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "rectangle-circle",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "rectangle-ellipsis",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "rectangle-goggles",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "rectangle-horizontal",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "rectangle-vertical",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "recycle",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "redo",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "redo-2",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "redo-dot",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "refresh-ccw",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "refresh-ccw-dot",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "refresh-cw",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "refresh-cw-off",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "refrigerator",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "regex",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "remove-formatting",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "repeat",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "repeat-1",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "repeat-2",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "repeat-off",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "replace",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "replace-all",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "reply",
+      "dots": 21,
+      "license": "ISC"
+    },
+    {
+      "name": "reply-all",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "rewind",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "ribbon",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "road",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "robot-arm",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "robot-vacuum",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "rocket",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "rocking-chair",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "roller-coaster",
+      "dots": 78,
+      "license": "ISC"
+    },
+    {
+      "name": "rose",
+      "dots": 74,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-3d",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-ccw",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-ccw-clock",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-ccw-key",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-ccw-square",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-cw",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-cw-clock",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-cw-fading-clock",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "rotate-cw-square",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "route",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "route-off",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "router",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "rows-2",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "rows-3",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "rows-4",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "rss",
+      "dots": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "ruler",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "ruler-dimension-line",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "russian-ruble",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "sailboat",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "salad",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "sandwich",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "satellite",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "satellite-dish",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "saudi-riyal",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "save",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "save-all",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "save-check",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "save-off",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "save-pen",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "save-plus",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "scale",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "scale-3d",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "scaling",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "scan",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-barcode",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-box",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-eye",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-face",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-heart",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-line",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-qr-code",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-search",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-square",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "scan-text",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "school",
+      "dots": 77,
+      "license": "ISC"
+    },
+    {
+      "name": "scissors",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "scissors-line-dashed",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "scooter",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "screen-share",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "screen-share-off",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "scroll",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "scroll-text",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "search",
+      "dots": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "search-alert",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "search-check",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "search-code",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "search-slash",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "search-x",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "section",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "send",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "send-horizontal",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "send-to-back",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "separator-horizontal",
+      "dots": 23,
+      "license": "ISC"
+    },
+    {
+      "name": "separator-vertical",
+      "dots": 23,
+      "license": "ISC"
+    },
+    {
+      "name": "server",
+      "dots": 82,
+      "license": "MIT"
+    },
+    {
+      "name": "server-cog",
+      "dots": 88,
+      "license": "ISC"
+    },
+    {
+      "name": "server-crash",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "server-off",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "server-plus",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "settings",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "settings-2",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "shapes",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "share",
+      "dots": 41,
+      "license": "MIT"
+    },
+    {
+      "name": "share-2",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "sheet",
+      "dots": 82,
+      "license": "ISC"
+    },
+    {
+      "name": "shell",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "shelving-unit",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "shield",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-alert",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-ban",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-check",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-cog",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-cog-corner",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-ellipsis",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-half",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-keyhole",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-lock",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-minus",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-plus",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-question-mark",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-user",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "shield-x",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "ship",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "ship-cargo",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "ship-wheel",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "shirt",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "shopping-bag",
+      "dots": 68,
+      "license": "MIT"
+    },
+    {
+      "name": "shopping-basket",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "shopping-cart",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "shopping-cart-minus",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "shopping-cart-plus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "shovel",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "shower-head",
+      "dots": 25,
+      "license": "ISC"
+    },
+    {
+      "name": "shredder",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "shrimp",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "shrimp-off",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "shrink",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "shrub",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "shuffle",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "sigma",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "signal",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "signal-high",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "signal-low",
+      "dots": 4,
+      "license": "ISC"
+    },
+    {
+      "name": "signal-medium",
+      "dots": 10,
+      "license": "ISC"
+    },
+    {
+      "name": "signal-zero",
+      "dots": 1,
+      "license": "ISC"
+    },
+    {
+      "name": "signature",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "signpost",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "signpost-big",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "siren",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "skip-back",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "skip-forward",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "skull",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "slash",
+      "dots": 15,
+      "license": "ISC"
+    },
+    {
+      "name": "slice",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "sliders-horizontal",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "sliders-vertical",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "smartphone",
+      "dots": 49,
+      "license": "MIT"
+    },
+    {
+      "name": "smartphone-charging",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "smartphone-nfc",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "snail",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "snowflake",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "soap-dispenser-droplet",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "sofa",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "solar-panel",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "soup",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "space",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "spade",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "sparkle",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "sparkles",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "speaker",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "speech",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "spell-check",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "spell-check-2",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "spline",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "spline-pointer",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "split",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "spool",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "sport-shoe",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "spotlight",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "spray-can",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "sprout",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "square",
+      "dots": 48,
+      "license": "MIT"
+    },
+    {
+      "name": "square-activity",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-down",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-down-left",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-down-right",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-left",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-out-down-left",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-out-down-right",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-out-up-left",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-out-up-right",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-right",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-right-enter",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-right-exit",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-up",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-up-left",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-arrow-up-right",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-asterisk",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-bookmark",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "square-bottom-dashed-scissors",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-centerline-dashed-horizontal",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "square-centerline-dashed-vertical",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "square-chart-gantt",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "square-check",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-check-big",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "square-chevron-down",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-chevron-left",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-chevron-right",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-chevron-up",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-code",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-bottom",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-bottom-code",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-kanban",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-mouse-pointer",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-plus",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-text",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-top-solid",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-x",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dashed-x-corner",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "square-dimensions",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "square-divide",
+      "dots": 57,
+      "license": "MIT"
+    },
+    {
+      "name": "square-dot",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "square-equal",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "square-exclamation-point",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "square-function",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "square-kanban",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "square-library",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "square-m",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "square-menu",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "square-minus",
+      "dots": 55,
+      "license": "MIT"
+    },
+    {
+      "name": "square-mouse-pointer",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "square-off",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-parking",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "square-parking-off",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "square-pause",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "square-pen",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "square-percent",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "square-pi",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "square-pilcrow",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "square-play",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "square-plus",
+      "dots": 61,
+      "license": "MIT"
+    },
+    {
+      "name": "square-power",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "square-radical",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "square-round-corner",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "square-scissors",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "square-sigma",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "square-slash",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "square-sparkles",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "square-split-horizontal",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "square-split-vertical",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "square-square",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "square-stack",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "square-star",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "square-stop",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "square-terminal",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "square-text",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "square-user",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "square-user-round",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "square-x",
+      "dots": 57,
+      "license": "MIT"
+    },
+    {
+      "name": "squares-exclude",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "squares-intersect",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "squares-subtract",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "squares-unite",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "squircle",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "squircle-dashed",
+      "dots": 24,
+      "license": "ISC"
+    },
+    {
+      "name": "squirrel",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "stamp",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "star",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "star-check",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "star-half",
+      "dots": 25,
+      "license": "ISC"
+    },
+    {
+      "name": "star-minus",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "star-off",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "star-plus",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "star-x",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "step-back",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "step-forward",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "stethoscope",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "sticker",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-note",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-note-check",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-note-minus",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-note-off",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-note-plus",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-note-x",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "sticky-notes",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "stone",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "store",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "stretch-horizontal",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "stretch-vertical",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "strikethrough",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "subscript",
+      "dots": 23,
+      "license": "ISC"
+    },
+    {
+      "name": "summary",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "sun",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "sun-dim",
+      "dots": 24,
+      "license": "ISC"
+    },
+    {
+      "name": "sun-medium",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "sun-moon",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "sun-snow",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "sunrise",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "sunset",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "superscript",
+      "dots": 23,
+      "license": "ISC"
+    },
+    {
+      "name": "swatch-book",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "swiss-franc",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "switch-camera",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "sword",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "swords",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "syringe",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "table",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "table-2",
+      "dots": 69,
+      "license": "MIT"
+    },
+    {
+      "name": "table-cells-merge",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "table-cells-split",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "table-columns-split",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "table-of-contents",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "table-properties",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "table-rows-split",
+      "dots": 81,
+      "license": "ISC"
+    },
+    {
+      "name": "tablet",
+      "dots": 49,
+      "license": "MIT"
+    },
+    {
+      "name": "tablet-smartphone",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "tablets",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "tag",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "tag-plus",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "tag-x",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "tags",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "tally-1",
+      "dots": 11,
+      "license": "ISC"
+    },
+    {
+      "name": "tally-2",
+      "dots": 22,
+      "license": "ISC"
+    },
+    {
+      "name": "tally-3",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "tally-4",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "tally-5",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "tangent",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "target",
+      "dots": 72,
+      "license": "MIT"
+    },
+    {
+      "name": "telescope",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "tent",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "tent-tree",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "terminal",
+      "dots": 15,
+      "license": "MIT"
+    },
+    {
+      "name": "test-tube",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "test-tube-diagonal",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "test-tubes",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "text-align-center",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "text-align-end",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "text-align-justify",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "text-align-start",
+      "dots": 32,
+      "license": "ISC"
+    },
+    {
+      "name": "text-cursor",
+      "dots": 29,
+      "license": "ISC"
+    },
+    {
+      "name": "text-cursor-input",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "text-initial",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "text-quote",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "text-search",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "text-wrap",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "theater",
+      "dots": 77,
+      "license": "ISC"
+    },
+    {
+      "name": "thermometer",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "thermometer-snowflake",
+      "dots": 65,
+      "license": "ISC"
+    },
+    {
+      "name": "thermometer-sun",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "thumbs-down",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "thumbs-up",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "tic-tac-toe",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket-check",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket-minus",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket-percent",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket-plus",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket-slash",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "ticket-x",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "tickets",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "tickets-plane",
+      "dots": 68,
+      "license": "ISC"
+    },
+    {
+      "name": "timeline",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "timer",
+      "dots": 34,
+      "license": "ISC"
+    },
+    {
+      "name": "timer-off",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "timer-reset",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "toggle-left",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "toggle-right",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "toilet",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "tool-case",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "toolbox",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "toothbrush",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "toothbrush-sparkles",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "tornado",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "torus",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "touchpad",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "touchpad-off",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "towel-rack",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "tower-control",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "toy-brick",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "tractor",
+      "dots": 62,
+      "license": "ISC"
+    },
+    {
+      "name": "traffic-cone",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "trailer",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "train-front",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "train-front-tunnel",
+      "dots": 88,
+      "license": "ISC"
+    },
+    {
+      "name": "train-track",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "tram-front",
+      "dots": 61,
+      "license": "ISC"
+    },
+    {
+      "name": "transgender",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "trash",
+      "dots": 65,
+      "license": "MIT"
+    },
+    {
+      "name": "trash-off",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "tree-deciduous",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "tree-palm",
+      "dots": 72,
+      "license": "ISC"
+    },
+    {
+      "name": "tree-pine",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "trees",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "trending-down",
+      "dots": 22,
+      "license": "ISC"
+    },
+    {
+      "name": "trending-up",
+      "dots": 22,
+      "license": "ISC"
+    },
+    {
+      "name": "trending-up-down",
+      "dots": 31,
+      "license": "ISC"
+    },
+    {
+      "name": "triangle",
+      "dots": 40,
+      "license": "MIT"
+    },
+    {
+      "name": "triangle-alert",
+      "dots": 43,
+      "license": "MIT"
+    },
+    {
+      "name": "triangle-dashed",
+      "dots": 27,
+      "license": "ISC"
+    },
+    {
+      "name": "triangle-right",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "triangles-centerline-dashed-horizontal",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "triangles-centerline-dashed-vertical",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "trophy",
+      "dots": 79,
+      "license": "ISC"
+    },
+    {
+      "name": "truck",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "truck-electric",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "tube-lotion",
+      "dots": 59,
+      "license": "ISC"
+    },
+    {
+      "name": "turkish-lira",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "turntable",
+      "dots": 73,
+      "license": "ISC"
+    },
+    {
+      "name": "turtle",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "tv",
+      "dots": 56,
+      "license": "MIT"
+    },
+    {
+      "name": "tv-minimal",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "tv-minimal-play",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "type",
+      "dots": 29,
+      "license": "MIT"
+    },
+    {
+      "name": "type-outline",
+      "dots": 66,
+      "license": "ISC"
+    },
+    {
+      "name": "umbrella",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "umbrella-off",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "underline",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "undo",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "undo-2",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "undo-dot",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "unfold-horizontal",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "unfold-vertical",
+      "dots": 28,
+      "license": "ISC"
+    },
+    {
+      "name": "ungroup",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "university",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "unlink",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "unlink-2",
+      "dots": 22,
+      "license": "ISC"
+    },
+    {
+      "name": "unplug",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "upload",
+      "dots": 36,
+      "license": "MIT"
+    },
+    {
+      "name": "usb",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "usb-c-port",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "user",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "user-check",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "user-cog",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "user-group",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "user-key",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "user-lock",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "user-minus",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "user-pen",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "user-plus",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-arrow-left",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-check",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-cog",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-group",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-key",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-minus",
+      "dots": 36,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-pen",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-plus",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-search",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "user-round-x",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "user-search",
+      "dots": 40,
+      "license": "ISC"
+    },
+    {
+      "name": "user-shield",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "user-star",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "user-x",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "users",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "users-round",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "utensils",
+      "dots": 60,
+      "license": "ISC"
+    },
+    {
+      "name": "utensils-crossed",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "utility-pole",
+      "dots": 41,
+      "license": "ISC"
+    },
+    {
+      "name": "van",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "variable",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "vault",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "vector-polygon",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "vector-square",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "vegan",
+      "dots": 91,
+      "license": "ISC"
+    },
+    {
+      "name": "venetian-mask",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "venus",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "venus-and-mars",
+      "dots": 33,
+      "license": "ISC"
+    },
+    {
+      "name": "vibrate",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "vibrate-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "video",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "video-off",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "videotape",
+      "dots": 80,
+      "license": "ISC"
+    },
+    {
+      "name": "view",
+      "dots": 75,
+      "license": "ISC"
+    },
+    {
+      "name": "virus",
+      "dots": 63,
+      "license": "ISC"
+    },
+    {
+      "name": "virus-off",
+      "dots": 69,
+      "license": "ISC"
+    },
+    {
+      "name": "voicemail",
+      "dots": 37,
+      "license": "ISC"
+    },
+    {
+      "name": "volleyball",
+      "dots": 90,
+      "license": "ISC"
+    },
+    {
+      "name": "volume",
+      "dots": 30,
+      "license": "ISC"
+    },
+    {
+      "name": "volume-1",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "volume-2",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "volume-off",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "volume-x",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "vote",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "wallet",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "wallet-cards",
+      "dots": 70,
+      "license": "ISC"
+    },
+    {
+      "name": "wallet-minimal",
+      "dots": 55,
+      "license": "ISC"
+    },
+    {
+      "name": "wallpaper",
+      "dots": 71,
+      "license": "ISC"
+    },
+    {
+      "name": "wand",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "wand-sparkles",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "warehouse",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "washing-machine",
+      "dots": 76,
+      "license": "ISC"
+    },
+    {
+      "name": "watch",
+      "dots": 50,
+      "license": "ISC"
+    },
+    {
+      "name": "waves-arrow-down",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "waves-arrow-up",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "waves-horizontal",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "waves-ladder",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "waves-vertical",
+      "dots": 57,
+      "license": "ISC"
+    },
+    {
+      "name": "waypoints",
+      "dots": 43,
+      "license": "ISC"
+    },
+    {
+      "name": "webcam",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "webcam-off",
+      "dots": 67,
+      "license": "ISC"
+    },
+    {
+      "name": "webhook",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "webhook-off",
+      "dots": 54,
+      "license": "ISC"
+    },
+    {
+      "name": "weight",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "weight-tilde",
+      "dots": 58,
+      "license": "ISC"
+    },
+    {
+      "name": "wheat",
+      "dots": 95,
+      "license": "ISC"
+    },
+    {
+      "name": "wheat-off",
+      "dots": 85,
+      "license": "ISC"
+    },
+    {
+      "name": "whistle",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "whole-word",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-cog",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-high",
+      "dots": 19,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-low",
+      "dots": 6,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-off",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-pen",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-sync",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "wifi-zero",
+      "dots": 1,
+      "license": "ISC"
+    },
+    {
+      "name": "wind",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "wind-arrow-down",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "wine",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "wine-off",
+      "dots": 48,
+      "license": "ISC"
+    },
+    {
+      "name": "workflow",
+      "dots": 47,
+      "license": "ISC"
+    },
+    {
+      "name": "worm",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "wrench",
+      "dots": 46,
+      "license": "ISC"
+    },
+    {
+      "name": "wrench-off",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "x",
+      "dots": 17,
+      "license": "MIT"
+    },
+    {
+      "name": "x-line-top",
+      "dots": 26,
+      "license": "ISC"
+    },
+    {
+      "name": "zap",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "zap-off",
+      "dots": 53,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-aquarius",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-aries",
+      "dots": 35,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-cancer",
+      "dots": 64,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-capricorn",
+      "dots": 42,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-gemini",
+      "dots": 44,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-leo",
+      "dots": 45,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-libra",
+      "dots": 52,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-ophiuchus",
+      "dots": 51,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-pisces",
+      "dots": 39,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-sagittarius",
+      "dots": 25,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-scorpio",
+      "dots": 49,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-taurus",
+      "dots": 38,
+      "license": "ISC"
+    },
+    {
+      "name": "zodiac-virgo",
+      "dots": 56,
+      "license": "ISC"
+    },
+    {
+      "name": "zoom-in",
+      "dots": 41,
+      "license": "MIT"
+    },
+    {
+      "name": "zoom-out",
+      "dots": 37,
+      "license": "MIT"
+    }
+  ]
+}
