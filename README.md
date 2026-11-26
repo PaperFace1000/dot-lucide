@@ -6,24 +6,20 @@ Lucide と、その土台になった [Feather](https://feathericons.com) を作
 
 変換済みの SVG が 1,857 個入っています（lucide-react 1.49.0 のアイコンから作成）。
 
-## アイコンを使う
+## 変換したアイコン
 
 `icons/` に、1 個 1 ファイルの SVG があります。ファイル名は Lucide のアイコン名と同じです。
 
-```html
-<img src="icons/house.svg" width="48" height="48" alt="">
-```
-
 - 枠は Lucide と同じ 24 × 24（`viewBox="0 0 24 24"`）で、点は 15 × 15 の並びです
-- 色は `currentColor` です。HTML に SVG を直接書けば、文字色に追従します
-- 点 1 個は、24px で表示すると 1.6px ほどです。点として見せるなら 32px 以上で使ってください
-- Lucide の別名（`trash-2` など、ほかのアイコンと同じ形を指す名前）のファイルはありません。元の名前（`trash`）のファイルを使ってください
+- 色は `currentColor` です
+- 点 1 個は、24px で表示すると 1.6px ほどです。点として見えるのは 32px 以上です
+- Lucide の別名（`trash-2` など、ほかのアイコンと同じ形を指す名前）のファイルはありません。元の名前（`trash`）のファイルだけがあります
 
 - 各ファイルの先頭に、元のアイコンとライセンスを書いたコメントが入っています
 
 `icons/manifest.json` に、書き出したときの設定と、アイコンごとの名前・点の数・ライセンスの一覧があります。
 
-変換したアイコンは、元になった Lucide のアイコンのライセンスに従います。配るときの決まりは「ライセンス」を見てください。
+変換したアイコンを利用するときは、元になった Lucide のアイコンのライセンスの条件に従ってください。詳しくは「ライセンス」にあります。
 
 ## サンプルページを見る
 
@@ -145,7 +141,7 @@ node tools/extract-icons.mjs /path/to/node_modules/lucide-react icons.json
 
 - 変換したアイコン（`icons/`）と元のデータ（`icons.json`）は、元になった Lucide のアイコンのライセンスに従います。どのアイコンがどちらのライセンスかは、`icons/manifest.json` と、各 SVG の先頭のコメントに書いてあります
 - 全文は、アイコンの分が `LICENSE-lucide.txt`、スクリプトとページの分が `LICENSE` にあります
-- `icons/` のファイルや `icons.json` を配るときは、`LICENSE-lucide.txt` を一緒に配ってください。ISC License も MIT License も、著作権表示と許諾の文面を複製に含めることが条件です
+- `icons/` のファイルや `icons.json` を利用するときは、元のアイコンのライセンスの条件に従ってください。ISC License も MIT License も、著作権表示と許諾の文面を複製に含めることを条件にしています
 
 ### 著作権
 
