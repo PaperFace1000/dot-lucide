@@ -1,6 +1,8 @@
+<!doctype html>
+<html lang="ja">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="claude:viewport-fit-sides" content="cover">
 <title>Lucide Dot Matrix</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Doto:wght@500..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -29,7 +31,11 @@
   }
 
   * { box-sizing: border-box; }
+  /* hidden 属性を付けた要素は必ず隠す。.cell のように display を指定した要素は、これが無いと絞り込んでも消えない */
+  [hidden] { display: none !important; }
+  img { max-width: 100%; }
   body {
+    margin: 0;
     background: var(--bg); color: var(--ink);
     font-family: var(--font-body); font-size: 14px; line-height: 1.7;
   }
@@ -156,6 +162,8 @@
 
   footer { color: var(--mute); font-size: 12px; border-top: 1px solid var(--line); padding-top: 16px; }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header>
@@ -298,7 +306,7 @@
         </tbody>
       </table>
     </div>
-    <p class="lead">ライセンスの全文: <a href="LICENSE-lucide.txt">LICENSE-lucide.txt</a>（Lucide と Feather）、<a href="LICENSE">LICENSE</a>（変換のスクリプトとこのページ）。変換したアイコンを利用するときは、元のアイコンのライセンスの条件に従ってください。</p>
+    <p class="lead">ライセンスの全文: <a href="LICENSE-lucide.txt">LICENSE-lucide.txt</a>（Lucide と Feather）、<a href="LICENSE.txt">LICENSE.txt</a>（変換のスクリプトとこのページ）。変換したアイコンを利用するときは、元のアイコンのライセンスの条件に従ってください。</p>
     <ul class="terms">
       <li><strong>著作権は元のアイコンに帰属します。</strong>Lucide のアイコンも、ここで変換したアイコンも、著作権は元のアイコンの作者（Lucide Icons and Contributors、Feather 由来のアイコンは Cole Bemis）に帰属します。</li>
       <li><strong>ライセンスと規約は、元のアイコンのものが優先されます。</strong>変換したアイコンに適用されるライセンスは、<a href="https://lucide.dev/license">Lucide が公開している最新のライセンス</a>です。Lucide が利用規約やガイドラインなどの決まりを定めている場合は、それらも変換したアイコンに適用されます。このページやリポジトリにある写し（LICENSE-lucide.txt）や説明と内容が食い違うときは、Lucide の公式の記載が優先されます。</li>
@@ -1953,3 +1961,5 @@
       el("js-loading").textContent = "アイコンのデータ（icons.json）を読み込めませんでした。ページを開き直してください。";
     });
 </script>
+</body>
+</html>

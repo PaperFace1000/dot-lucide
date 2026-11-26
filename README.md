@@ -130,7 +130,7 @@ node tools/extract-icons.mjs /path/to/node_modules/lucide-react icons.json
 | `tools/export-svg.mjs` | `icons/` を書き出し直すスクリプト |
 | `tools/check.mjs` | 変換の結果を確かめるスクリプト |
 | `tools/extract-icons.mjs` | `icons.json` を作り直すスクリプト |
-| `LICENSE` | 変換のスクリプトとサンプルページのライセンス（MIT License） |
+| `LICENSE.txt` | 変換のスクリプトとサンプルページのライセンス（MIT License） |
 | `LICENSE-lucide.txt` | Lucide のライセンス全文（アイコンの形のライセンス） |
 
 ## ライセンス
@@ -144,7 +144,7 @@ node tools/extract-icons.mjs /path/to/node_modules/lucide-react icons.json
 | 変換のスクリプトとサンプルページ（`index.html`・`tools/`） | MIT License | Copyright (c) 2026 PaperFace1000 |
 
 - 変換したアイコン（`icons/`）と元のデータ（`icons.json`）は、元になった Lucide のアイコンのライセンスに従います。どのアイコンがどちらのライセンスかは、`icons/manifest.json` と、各 SVG の先頭のコメントに書いてあります
-- 全文は、アイコンの分が `LICENSE-lucide.txt`、スクリプトとページの分が `LICENSE` にあります
+- 全文は、アイコンの分が `LICENSE-lucide.txt`、スクリプトとページの分が `LICENSE.txt` にあります
 - `icons/` のファイルや `icons.json` を利用するときは、元のアイコンのライセンスの条件に従ってください。ISC License も MIT License も、著作権表示と許諾の文面を複製に含めることを条件にしています
 
 ### 著作権

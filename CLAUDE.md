@@ -39,16 +39,22 @@ PLAYWRIGHT_FROM=/path/to/project node tools/check.mjs
 
 ## ライセンス
 
-- 変換のスクリプトとサンプルページ（`index.html`・`tools/`）は MIT License（`LICENSE`）
+- 変換のスクリプトとサンプルページ（`index.html`・`tools/`）は MIT License（`LICENSE.txt`）
 - 変換したアイコン（`icons/`）と元のデータ（`icons.json`）は、元になった Lucide のアイコンのライセンスに従う。Lucide のアイコンは ISC License、Feather から引き継がれたアイコンは MIT License で、全文は `LICENSE-lucide.txt`。このファイルは消さない・書き換えない
 - アイコンごとのライセンスは `icons.json` の 3 つ目の値に入っている。手で書き換えず、`tools/extract-icons.mjs` で作り直すこと
 - サンプルページでは、アイコンごとのライセンスを、一覧の名前の下と上のパネルに出している。表示を作り直すときも、アイコンごとのライセンスと著作権表示を消さないこと
 - 書き出す SVG の先頭には、元のアイコンとライセンスのコメントを入れる（`index.html` の `exportSvg`）。このコメントを外さないこと
 - `icons.json` を新しい版の Lucide から作り直したら、`README.md` の「Lucide の新しい版に追従する」の 3 つの手順を行うこと
-- 次の 3 つの記載は、サンプルページのライセンスの欄・`README.md`・`LICENSE` に入っている。文面を整えるときも、どれも消さないこと
+- 次の 3 つの記載は、サンプルページのライセンスの欄・`README.md`・`LICENSE.txt` に入っている。文面を整えるときも、どれも消さないこと
   - 著作権は元のアイコンの作者に帰属する
   - 適用されるライセンスは Lucide が公開している最新のもので、Lucide が定める規約やガイドラインも適用される。リポジトリの写しや説明と食い違うときは Lucide の記載が優先される
   - 変換したアイコンは無保証で、使って生じた損害について作者は責任を負わない
+
+## GitHub Pages
+
+- `index.html` は、そのまま GitHub Pages で配る完結した HTML（`<!doctype html>` から `</html>` まで）。外枠を足してくれる道具に載せる前提の書き方に戻さないこと
+- `.nojekyll` は消さない。消すと GitHub Pages が Jekyll を通し、`README.md` などが HTML のページとしても配られる
+- ページから読むファイル（`icons.json`・ライセンスのファイル）は相対パスで指定すること。サブフォルダで配られるので、`/` で始まるパスは使わない
 
 ## コードの書き方
 
